@@ -1,8 +1,9 @@
 # iCounselor 
-University of Akron
 ==============================
 
-# Class Data
+Built with the initial intenet of use with the University of Akron
+
+# Class Questions
 
 You need to make some decisions on your App. You will need to provide a start on the following:
 
