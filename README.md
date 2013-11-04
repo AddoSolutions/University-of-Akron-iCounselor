@@ -1,4 +1,4 @@
-# iCounselor 
+iCounselor 
 ==============================
 
 Built with the initial intenet of use with the University of Akron
@@ -23,16 +23,8 @@ Will marry the DARS reporting system and the University class scheduling system.
 
 ## Jobs to be done
 
-*What will your app do for students in their everyday life? What “pain points” does this attempt to solve?*
-
-
+We'll save you time and frustration by allowing you to see your graduation requirements without the hassle of using multiple systems simultaiously.
 
 # External Data Sources
 
-*What external data would you need to make the App work?*
-
-
-
-
-App Name: iCounselor
-
+Theroretically DARS API, and API into the scheduling system.
