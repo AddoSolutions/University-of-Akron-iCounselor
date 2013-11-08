@@ -15,7 +15,7 @@
 @dynamic days;
 @dynamic courseDescription;
 @dynamic instructor;
-@dynamic name;
+@dynamic courseName;
 @dynamic time;
 
 @end
