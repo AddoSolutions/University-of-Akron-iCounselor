@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72A865E2182D8E46008FE2D5 /* ClassList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72A865E0182D8E46008FE2D5 /* ClassList.xcdatamodeld */; };
 		B9BE8B3A181C69D900460371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B39181C69D900460371 /* Foundation.framework */; };
 		B9BE8B3C181C69D900460371 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B3B181C69D900460371 /* CoreGraphics.framework */; };
 		B9BE8B3E181C69D900460371 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B3D181C69D900460371 /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72A865E1182D8E46008FE2D5 /* ClassList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassList.xcdatamodel; sourceTree = "<group>"; };
 		B9BE8B36181C69D900460371 /* iCounselor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCounselor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BE8B39181C69D900460371 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9BE8B3B181C69D900460371 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +89,7 @@
 		B9BE8B2D181C69D900460371 = {
 			isa = PBXGroup;
 			children = (
+				72A865E0182D8E46008FE2D5 /* ClassList.xcdatamodeld */,
 				B9BE8B3F181C69D900460371 /* iCounselor */,
 				B9BE8B64181C69D900460371 /* iCounselorTests */,
 				B9BE8B38181C69D900460371 /* Frameworks */,
@@ -261,6 +264,7 @@
 			files = (
 				B9BE8B4A181C69D900460371 /* iCouncilAppDelegate.m in Sources */,
 				B9BE8B53181C69D900460371 /* iCouncilFirstViewController.m in Sources */,
+				72A865E2182D8E46008FE2D5 /* ClassList.xcdatamodeld in Sources */,
 				B9BE8B56181C69D900460371 /* iCouncilSecondViewController.m in Sources */,
 				B9BE8B46181C69D900460371 /* main.m in Sources */,
 			);
@@ -481,6 +485,7 @@
 				B9BE8B70181C69D900460371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9BE8B71181C69D900460371 /* Build configuration list for PBXNativeTarget "iCounselorTests" */ = {
 			isa = XCConfigurationList;
@@ -489,8 +494,22 @@
 				B9BE8B73181C69D900460371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		72A865E0182D8E46008FE2D5 /* ClassList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				72A865E1182D8E46008FE2D5 /* ClassList.xcdatamodel */,
+			);
+			currentVersion = 72A865E1182D8E46008FE2D5 /* ClassList.xcdatamodel */;
+			path = ClassList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B9BE8B2E181C69D900460371 /* Project object */;
 }
