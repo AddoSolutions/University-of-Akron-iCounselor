@@ -5,6 +5,7 @@
         <attribute name="instructor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="days" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="ClassInfo" positionX="0" positionY="0" width="0" height="0"/>
