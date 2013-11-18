@@ -3,6 +3,33 @@ iCounselor
 
 Built with the initial intent of use with the University of Akron
 
+# Data Model
+
+* DegreeQualifications
+	* Name
+	* Parent Qualification *(for recursive qualifications)*
+* DegreeQualificationsClasses *(Many-To-Many Relationship)*
+	* DegreeQualification
+	* Class
+* Class
+	* Class Name
+	* Class Department
+	* Class Section
+	* Description
+	* Prerequisites
+* ClassInstance
+	* Class Number
+	* Room
+	* Professor
+	* Start Date
+	* End Date
+	* Start Time
+	* End Time
+	* Days of Week
+* CartItem
+	* ClassInstance
+	* Date Added
+
 # Class Questions
 
 You need to make some decisions on your App. You will need to provide a start on the following:
