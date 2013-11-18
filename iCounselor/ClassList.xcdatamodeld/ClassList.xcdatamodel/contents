@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="CartItem" syncable="YES">
-        <attribute name="classInstance" optional="YES" syncable="YES"/>
         <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <entity name="Class" syncable="YES">
@@ -23,17 +22,15 @@
     </entity>
     <entity name="DegreeQualifications" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="parentQualification" optional="YES" syncable="YES"/>
     </entity>
     <entity name="DegreeQualificationsClasses" syncable="YES">
-        <attribute name="degreeQualification" optional="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DegreeQualifications" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="DegreeQualificationsClasses" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="CartItem" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Class" positionX="0" positionY="0" width="0" height="0"/>
         <element name="ClassInstance" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="CartItem" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DegreeQualifications" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DegreeQualificationsClasses" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>
