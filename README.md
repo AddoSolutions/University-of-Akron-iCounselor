@@ -1,7 +1,7 @@
 iCounselor 
 ==============================
 
-Built with the initial intenet of use with the University of Akron
+Built with the initial intent of use with the University of Akron
 
 # Class Questions
 
@@ -27,4 +27,4 @@ We'll save you time and frustration by allowing you to see your graduation requi
 
 # External Data Sources
 
-Theroretically DARS API, and API into the scheduling system.
+Theoretically DARS API, and API into the scheduling system.
