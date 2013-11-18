@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="ClassInfo" representedClassName="ClassInfo" syncable="YES">
-        <attribute name="courseDescription" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="courseName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="credits" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="days" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="instructor" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
+    <entity name="CartItem" syncable="YES"/>
+    <entity name="Class" syncable="YES"/>
+    <entity name="ClassInstance" syncable="YES"/>
+    <entity name="DegreeQualifications" syncable="YES"/>
+    <entity name="DegreeQualificationsClasses" syncable="YES"/>
     <elements>
-        <element name="ClassInfo" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DegreeQualifications" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DegreeQualificationsClasses" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Class" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ClassInstance" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="CartItem" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>
