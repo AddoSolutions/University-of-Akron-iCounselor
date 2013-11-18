@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="CartItem" syncable="YES"/>
-    <entity name="Class" syncable="YES"/>
-    <entity name="ClassInstance" syncable="YES"/>
-    <entity name="DegreeQualifications" syncable="YES"/>
-    <entity name="DegreeQualificationsClasses" syncable="YES"/>
+    <entity name="CartItem" syncable="YES">
+        <attribute name="classInstance" optional="YES" syncable="YES"/>
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Class" syncable="YES">
+        <attribute name="clasDescr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="prereqs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ClassInstance" syncable="YES">
+        <attribute name="classNum" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="meetingDays" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="professor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roomNum" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="DegreeQualifications" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentQualification" optional="YES" syncable="YES"/>
+    </entity>
+    <entity name="DegreeQualificationsClasses" syncable="YES">
+        <attribute name="degreeQualification" optional="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="DegreeQualifications" positionX="0" positionY="0" width="0" height="0"/>
         <element name="DegreeQualificationsClasses" positionX="0" positionY="0" width="0" height="0"/>
