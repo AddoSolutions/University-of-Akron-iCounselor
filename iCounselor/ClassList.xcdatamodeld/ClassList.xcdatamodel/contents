@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="CartItem" syncable="YES">
-        <attribute name="classInstance" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="classInstance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClassInstance" inverseName="inCart" inverseEntity="ClassInstance" syncable="YES"/>
     </entity>
     <entity name="Class" syncable="YES">
-        <attribute name="clasDescr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classDescr" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="department" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="prereqs" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="section" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="partOfQualification" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DegreeQualificationsClasses" inverseName="classname" inverseEntity="DegreeQualificationsClasses" syncable="YES"/>
+        <relationship name="prerequisite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="prerequisite" inverseEntity="Class" syncable="YES"/>
     </entity>
     <entity name="ClassInstance" syncable="YES">
         <attribute name="classNum" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -20,14 +21,16 @@
         <attribute name="roomNum" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="inCart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CartItem" inverseName="classInstance" inverseEntity="CartItem" syncable="YES"/>
     </entity>
     <entity name="DegreeQualifications" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="parentQualification" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DegreeQualificationsClasses" inverseName="degreeQualification" inverseEntity="DegreeQualificationsClasses" syncable="YES"/>
+        <relationship name="hasParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DegreeQualifications" inverseName="hasParent" inverseEntity="DegreeQualifications" syncable="YES"/>
     </entity>
     <entity name="DegreeQualificationsClasses" syncable="YES">
-        <attribute name="classname" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="degreeQualification" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classname" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Class" inverseName="partOfQualification" inverseEntity="Class" syncable="YES"/>
+        <relationship name="degreeQualification" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DegreeQualifications" inverseName="hasClass" inverseEntity="DegreeQualifications" syncable="YES"/>
     </entity>
     <elements>
         <element name="CartItem" positionX="0" positionY="0" width="0" height="0"/>
