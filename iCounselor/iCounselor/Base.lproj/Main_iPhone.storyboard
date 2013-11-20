@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--I Council First View Controller - First-->
@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="1276" y="-162"/>
         </scene>
-        <!--Navigation Controller - Degree-->
+        <!--I Council Second View Controller - Degree-->
         <scene sceneID="aZM-aw-7s2">
             <objects>
-                <navigationController definesPresentationContext="YES" id="KT6-CZ-K9k" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="KT6-CZ-K9k" customClass="iCouncilSecondViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Degree" id="ckC-OU-PkC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qt2-q7-VaN">
                         <autoresizingMask key="autoresizingMask"/>
