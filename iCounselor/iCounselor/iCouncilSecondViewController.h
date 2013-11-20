@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iCouncilSecondViewController : UIViewController
+@interface iCouncilSecondViewController : UINavigationController
 
 @end
