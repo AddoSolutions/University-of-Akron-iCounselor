@@ -25,6 +25,7 @@
 		B9BE8B69181C69D900460371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9BE8B67181C69D900460371 /* InfoPlist.strings */; };
 		B9BE8B6B181C69D900460371 /* iCounselorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE8B6A181C69D900460371 /* iCounselorTests.m */; };
 		D3A15AB7183D32350062AEC3 /* iCouncilThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A15AB6183D32350062AEC3 /* iCouncilThirdViewController.m */; };
+		D3A15ABA183D33600062AEC3 /* iCouncilFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A15AB9183D33600062AEC3 /* iCouncilFourthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		B9BE8B6A181C69D900460371 /* iCounselorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCounselorTests.m; sourceTree = "<group>"; };
 		D3A15AB5183D32350062AEC3 /* iCouncilThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCouncilThirdViewController.h; sourceTree = "<group>"; };
 		D3A15AB6183D32350062AEC3 /* iCouncilThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCouncilThirdViewController.m; sourceTree = "<group>"; };
+		D3A15AB8183D33600062AEC3 /* iCouncilFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCouncilFourthViewController.h; sourceTree = "<group>"; };
+		D3A15AB9183D33600062AEC3 /* iCouncilFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCouncilFourthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				B9BE8B55181C69D900460371 /* iCouncilSecondViewController.m */,
 				D3A15AB5183D32350062AEC3 /* iCouncilThirdViewController.h */,
 				D3A15AB6183D32350062AEC3 /* iCouncilThirdViewController.m */,
+				D3A15AB8183D33600062AEC3 /* iCouncilFourthViewController.h */,
+				D3A15AB9183D33600062AEC3 /* iCouncilFourthViewController.m */,
 				72A865E0182D8E46008FE2D5 /* ClassList.xcdatamodeld */,
 				B9BE8B57181C69D900460371 /* Images.xcassets */,
 				B9BE8B40181C69D900460371 /* Supporting Files */,
@@ -271,6 +276,7 @@
 				B9BE8B53181C69D900460371 /* iCouncilFirstViewController.m in Sources */,
 				D3A15AB7183D32350062AEC3 /* iCouncilThirdViewController.m in Sources */,
 				72A865E2182D8E46008FE2D5 /* ClassList.xcdatamodeld in Sources */,
+				D3A15ABA183D33600062AEC3 /* iCouncilFourthViewController.m in Sources */,
 				B9BE8B56181C69D900460371 /* iCouncilSecondViewController.m in Sources */,
 				B9BE8B46181C69D900460371 /* main.m in Sources */,
 			);
