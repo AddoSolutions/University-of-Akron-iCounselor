@@ -55,6 +55,10 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    
+    self.remotePlist = [NSDictionary dictionaryWithContentsOfURL:[NSURL URLWithString:@"https://raw.github.com/AddoSolutions/University-of-Akron-iCounselor/master/remote-plist.plist"]];
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
