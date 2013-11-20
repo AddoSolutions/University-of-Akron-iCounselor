@@ -2,8 +2,8 @@
 //  iCounselorTests.m
 //  iCounselorTests
 //
-//  Created by Nick Artman on 10/26/13.
-//  Copyright (c) 2013 Addo Solutions. All rights reserved.
+//  Created by Nick Artman on 11/20/13.
+//  Copyright (c) 2013 Nick Artman. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

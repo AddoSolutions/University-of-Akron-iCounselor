@@ -7,163 +7,164 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72511A5B182D9B950077EBAD /* ClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 72511A5A182D9B950077EBAD /* ClassInfo.m */; };
-		72A865E2182D8E46008FE2D5 /* ClassList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72A865E0182D8E46008FE2D5 /* ClassList.xcdatamodeld */; };
-		B9BE8B3A181C69D900460371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B39181C69D900460371 /* Foundation.framework */; };
-		B9BE8B3C181C69D900460371 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B3B181C69D900460371 /* CoreGraphics.framework */; };
-		B9BE8B3E181C69D900460371 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B3D181C69D900460371 /* UIKit.framework */; };
-		B9BE8B44181C69D900460371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9BE8B42181C69D900460371 /* InfoPlist.strings */; };
-		B9BE8B46181C69D900460371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE8B45181C69D900460371 /* main.m */; };
-		B9BE8B4A181C69D900460371 /* iCouncilAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE8B49181C69D900460371 /* iCouncilAppDelegate.m */; };
-		B9BE8B4D181C69D900460371 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9BE8B4B181C69D900460371 /* Main_iPhone.storyboard */; };
-		B9BE8B50181C69D900460371 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9BE8B4E181C69D900460371 /* Main_iPad.storyboard */; };
-		B9BE8B53181C69D900460371 /* iCouncilFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE8B52181C69D900460371 /* iCouncilFirstViewController.m */; };
-		B9BE8B56181C69D900460371 /* iCouncilSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE8B55181C69D900460371 /* iCouncilSecondViewController.m */; };
-		B9BE8B58181C69D900460371 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BE8B57181C69D900460371 /* Images.xcassets */; };
-		B9BE8B5F181C69D900460371 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B5E181C69D900460371 /* XCTest.framework */; };
-		B9BE8B60181C69D900460371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B39181C69D900460371 /* Foundation.framework */; };
-		B9BE8B61181C69D900460371 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BE8B3D181C69D900460371 /* UIKit.framework */; };
-		B9BE8B69181C69D900460371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9BE8B67181C69D900460371 /* InfoPlist.strings */; };
-		B9BE8B6B181C69D900460371 /* iCounselorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BE8B6A181C69D900460371 /* iCounselorTests.m */; };
+		B9B11892183D681300F70D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11891183D681300F70D99 /* Foundation.framework */; };
+		B9B11894183D681300F70D99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11893183D681300F70D99 /* CoreGraphics.framework */; };
+		B9B11896183D681300F70D99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11895183D681300F70D99 /* UIKit.framework */; };
+		B9B11898183D681300F70D99 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11897183D681300F70D99 /* CoreData.framework */; };
+		B9B1189E183D681400F70D99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B1189C183D681400F70D99 /* InfoPlist.strings */; };
+		B9B118A0183D681400F70D99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B1189F183D681400F70D99 /* main.m */; };
+		B9B118A4183D681400F70D99 /* iCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B118A3183D681400F70D99 /* iCAppDelegate.m */; };
+		B9B118A7183D681400F70D99 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B118A5183D681400F70D99 /* Main_iPhone.storyboard */; };
+		B9B118AA183D681400F70D99 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B118A8183D681400F70D99 /* Main_iPad.storyboard */; };
+		B9B118AD183D681400F70D99 /* iCounselor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9B118AB183D681400F70D99 /* iCounselor.xcdatamodeld */; };
+		B9B118B0183D681400F70D99 /* iCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B118AF183D681400F70D99 /* iCMasterViewController.m */; };
+		B9B118B3183D681400F70D99 /* iCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B118B2183D681400F70D99 /* iCDetailViewController.m */; };
+		B9B118B5183D681400F70D99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B118B4183D681400F70D99 /* Images.xcassets */; };
+		B9B118BC183D681400F70D99 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B118BB183D681400F70D99 /* XCTest.framework */; };
+		B9B118BD183D681400F70D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11891183D681300F70D99 /* Foundation.framework */; };
+		B9B118BE183D681400F70D99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11895183D681300F70D99 /* UIKit.framework */; };
+		B9B118BF183D681400F70D99 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11897183D681300F70D99 /* CoreData.framework */; };
+		B9B118C7183D681400F70D99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9B118C5183D681400F70D99 /* InfoPlist.strings */; };
+		B9B118C9183D681400F70D99 /* iCounselorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B118C8183D681400F70D99 /* iCounselorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B9BE8B62181C69D900460371 /* PBXContainerItemProxy */ = {
+		B9B118C0183D681400F70D99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B9BE8B2E181C69D900460371 /* Project object */;
+			containerPortal = B9B11886183D681300F70D99 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9BE8B35181C69D900460371;
+			remoteGlobalIDString = B9B1188D183D681300F70D99;
 			remoteInfo = iCounselor;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		72511A59182D9B950077EBAD /* ClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassInfo.h; sourceTree = "<group>"; };
-		72511A5A182D9B950077EBAD /* ClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassInfo.m; sourceTree = "<group>"; };
-		72A865E1182D8E46008FE2D5 /* ClassList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassList.xcdatamodel; sourceTree = "<group>"; };
-		B9BE8B36181C69D900460371 /* iCounselor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCounselor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9BE8B39181C69D900460371 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B9BE8B3B181C69D900460371 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B9BE8B3D181C69D900460371 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B9BE8B41181C69D900460371 /* iCounselor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCounselor-Info.plist"; sourceTree = "<group>"; };
-		B9BE8B43181C69D900460371 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B9BE8B45181C69D900460371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B9BE8B47181C69D900460371 /* iCounselor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCounselor-Prefix.pch"; sourceTree = "<group>"; };
-		B9BE8B48181C69D900460371 /* iCouncilAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCouncilAppDelegate.h; sourceTree = "<group>"; };
-		B9BE8B49181C69D900460371 /* iCouncilAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCouncilAppDelegate.m; sourceTree = "<group>"; };
-		B9BE8B4C181C69D900460371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B9BE8B4F181C69D900460371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		B9BE8B51181C69D900460371 /* iCouncilFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCouncilFirstViewController.h; sourceTree = "<group>"; };
-		B9BE8B52181C69D900460371 /* iCouncilFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCouncilFirstViewController.m; sourceTree = "<group>"; };
-		B9BE8B54181C69D900460371 /* iCouncilSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCouncilSecondViewController.h; sourceTree = "<group>"; };
-		B9BE8B55181C69D900460371 /* iCouncilSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCouncilSecondViewController.m; sourceTree = "<group>"; };
-		B9BE8B57181C69D900460371 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B9BE8B5D181C69D900460371 /* iCounselorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCounselorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9BE8B5E181C69D900460371 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B9BE8B66181C69D900460371 /* iCounselorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCounselorTests-Info.plist"; sourceTree = "<group>"; };
-		B9BE8B68181C69D900460371 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B9BE8B6A181C69D900460371 /* iCounselorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCounselorTests.m; sourceTree = "<group>"; };
+		B9B1188E183D681300F70D99 /* iCounselor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCounselor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B11891183D681300F70D99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9B11893183D681300F70D99 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9B11895183D681300F70D99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9B11897183D681300F70D99 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B9B1189B183D681400F70D99 /* iCounselor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCounselor-Info.plist"; sourceTree = "<group>"; };
+		B9B1189D183D681400F70D99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9B1189F183D681400F70D99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9B118A1183D681400F70D99 /* iCounselor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCounselor-Prefix.pch"; sourceTree = "<group>"; };
+		B9B118A2183D681400F70D99 /* iCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCAppDelegate.h; sourceTree = "<group>"; };
+		B9B118A3183D681400F70D99 /* iCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCAppDelegate.m; sourceTree = "<group>"; };
+		B9B118A6183D681400F70D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B9B118A9183D681400F70D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B9B118AC183D681400F70D99 /* iCounselor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iCounselor.xcdatamodel; sourceTree = "<group>"; };
+		B9B118AE183D681400F70D99 /* iCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCMasterViewController.h; sourceTree = "<group>"; };
+		B9B118AF183D681400F70D99 /* iCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCMasterViewController.m; sourceTree = "<group>"; };
+		B9B118B1183D681400F70D99 /* iCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCDetailViewController.h; sourceTree = "<group>"; };
+		B9B118B2183D681400F70D99 /* iCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCDetailViewController.m; sourceTree = "<group>"; };
+		B9B118B4183D681400F70D99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B9B118BA183D681400F70D99 /* iCounselorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCounselorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B118BB183D681400F70D99 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B9B118C4183D681400F70D99 /* iCounselorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCounselorTests-Info.plist"; sourceTree = "<group>"; };
+		B9B118C6183D681400F70D99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9B118C8183D681400F70D99 /* iCounselorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCounselorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B9BE8B33181C69D900460371 /* Frameworks */ = {
+		B9B1188B183D681300F70D99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BE8B3C181C69D900460371 /* CoreGraphics.framework in Frameworks */,
-				B9BE8B3E181C69D900460371 /* UIKit.framework in Frameworks */,
-				B9BE8B3A181C69D900460371 /* Foundation.framework in Frameworks */,
+				B9B11894183D681300F70D99 /* CoreGraphics.framework in Frameworks */,
+				B9B11898183D681300F70D99 /* CoreData.framework in Frameworks */,
+				B9B11896183D681300F70D99 /* UIKit.framework in Frameworks */,
+				B9B11892183D681300F70D99 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9BE8B5A181C69D900460371 /* Frameworks */ = {
+		B9B118B7183D681400F70D99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BE8B5F181C69D900460371 /* XCTest.framework in Frameworks */,
-				B9BE8B61181C69D900460371 /* UIKit.framework in Frameworks */,
-				B9BE8B60181C69D900460371 /* Foundation.framework in Frameworks */,
+				B9B118BC183D681400F70D99 /* XCTest.framework in Frameworks */,
+				B9B118BF183D681400F70D99 /* CoreData.framework in Frameworks */,
+				B9B118BE183D681400F70D99 /* UIKit.framework in Frameworks */,
+				B9B118BD183D681400F70D99 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B9BE8B2D181C69D900460371 = {
+		B9B11885183D681300F70D99 = {
 			isa = PBXGroup;
 			children = (
-				B9BE8B3F181C69D900460371 /* iCounselor */,
-				B9BE8B64181C69D900460371 /* iCounselorTests */,
-				B9BE8B38181C69D900460371 /* Frameworks */,
-				B9BE8B37181C69D900460371 /* Products */,
+				B9B11899183D681400F70D99 /* iCounselor */,
+				B9B118C2183D681400F70D99 /* iCounselorTests */,
+				B9B11890183D681300F70D99 /* Frameworks */,
+				B9B1188F183D681300F70D99 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B9BE8B37181C69D900460371 /* Products */ = {
+		B9B1188F183D681300F70D99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE8B36181C69D900460371 /* iCounselor.app */,
-				B9BE8B5D181C69D900460371 /* iCounselorTests.xctest */,
+				B9B1188E183D681300F70D99 /* iCounselor.app */,
+				B9B118BA183D681400F70D99 /* iCounselorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B9BE8B38181C69D900460371 /* Frameworks */ = {
+		B9B11890183D681300F70D99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE8B39181C69D900460371 /* Foundation.framework */,
-				B9BE8B3B181C69D900460371 /* CoreGraphics.framework */,
-				B9BE8B3D181C69D900460371 /* UIKit.framework */,
-				B9BE8B5E181C69D900460371 /* XCTest.framework */,
+				B9B11891183D681300F70D99 /* Foundation.framework */,
+				B9B11893183D681300F70D99 /* CoreGraphics.framework */,
+				B9B11895183D681300F70D99 /* UIKit.framework */,
+				B9B11897183D681300F70D99 /* CoreData.framework */,
+				B9B118BB183D681400F70D99 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B9BE8B3F181C69D900460371 /* iCounselor */ = {
+		B9B11899183D681400F70D99 /* iCounselor */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE8B48181C69D900460371 /* iCouncilAppDelegate.h */,
-				B9BE8B49181C69D900460371 /* iCouncilAppDelegate.m */,
-				B9BE8B4B181C69D900460371 /* Main_iPhone.storyboard */,
-				B9BE8B4E181C69D900460371 /* Main_iPad.storyboard */,
-				B9BE8B51181C69D900460371 /* iCouncilFirstViewController.h */,
-				B9BE8B52181C69D900460371 /* iCouncilFirstViewController.m */,
-				B9BE8B54181C69D900460371 /* iCouncilSecondViewController.h */,
-				B9BE8B55181C69D900460371 /* iCouncilSecondViewController.m */,
-				72A865E0182D8E46008FE2D5 /* ClassList.xcdatamodeld */,
-				72511A59182D9B950077EBAD /* ClassInfo.h */,
-				72511A5A182D9B950077EBAD /* ClassInfo.m */,
-				B9BE8B57181C69D900460371 /* Images.xcassets */,
-				B9BE8B40181C69D900460371 /* Supporting Files */,
+				B9B118A2183D681400F70D99 /* iCAppDelegate.h */,
+				B9B118A3183D681400F70D99 /* iCAppDelegate.m */,
+				B9B118A5183D681400F70D99 /* Main_iPhone.storyboard */,
+				B9B118A8183D681400F70D99 /* Main_iPad.storyboard */,
+				B9B118AE183D681400F70D99 /* iCMasterViewController.h */,
+				B9B118AF183D681400F70D99 /* iCMasterViewController.m */,
+				B9B118B1183D681400F70D99 /* iCDetailViewController.h */,
+				B9B118B2183D681400F70D99 /* iCDetailViewController.m */,
+				B9B118B4183D681400F70D99 /* Images.xcassets */,
+				B9B118AB183D681400F70D99 /* iCounselor.xcdatamodeld */,
+				B9B1189A183D681400F70D99 /* Supporting Files */,
 			);
 			path = iCounselor;
 			sourceTree = "<group>";
 		};
-		B9BE8B40181C69D900460371 /* Supporting Files */ = {
+		B9B1189A183D681400F70D99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE8B41181C69D900460371 /* iCounselor-Info.plist */,
-				B9BE8B42181C69D900460371 /* InfoPlist.strings */,
-				B9BE8B45181C69D900460371 /* main.m */,
-				B9BE8B47181C69D900460371 /* iCounselor-Prefix.pch */,
+				B9B1189B183D681400F70D99 /* iCounselor-Info.plist */,
+				B9B1189C183D681400F70D99 /* InfoPlist.strings */,
+				B9B1189F183D681400F70D99 /* main.m */,
+				B9B118A1183D681400F70D99 /* iCounselor-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B9BE8B64181C69D900460371 /* iCounselorTests */ = {
+		B9B118C2183D681400F70D99 /* iCounselorTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE8B6A181C69D900460371 /* iCounselorTests.m */,
-				B9BE8B65181C69D900460371 /* Supporting Files */,
+				B9B118C8183D681400F70D99 /* iCounselorTests.m */,
+				B9B118C3183D681400F70D99 /* Supporting Files */,
 			);
 			path = iCounselorTests;
 			sourceTree = "<group>";
 		};
-		B9BE8B65181C69D900460371 /* Supporting Files */ = {
+		B9B118C3183D681400F70D99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE8B66181C69D900460371 /* iCounselorTests-Info.plist */,
-				B9BE8B67181C69D900460371 /* InfoPlist.strings */,
+				B9B118C4183D681400F70D99 /* iCounselorTests-Info.plist */,
+				B9B118C5183D681400F70D99 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,13 +172,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9BE8B35181C69D900460371 /* iCounselor */ = {
+		B9B1188D183D681300F70D99 /* iCounselor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9BE8B6E181C69D900460371 /* Build configuration list for PBXNativeTarget "iCounselor" */;
+			buildConfigurationList = B9B118CC183D681400F70D99 /* Build configuration list for PBXNativeTarget "iCounselor" */;
 			buildPhases = (
-				B9BE8B32181C69D900460371 /* Sources */,
-				B9BE8B33181C69D900460371 /* Frameworks */,
-				B9BE8B34181C69D900460371 /* Resources */,
+				B9B1188A183D681300F70D99 /* Sources */,
+				B9B1188B183D681300F70D99 /* Frameworks */,
+				B9B1188C183D681300F70D99 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -185,43 +186,43 @@
 			);
 			name = iCounselor;
 			productName = iCounselor;
-			productReference = B9BE8B36181C69D900460371 /* iCounselor.app */;
+			productReference = B9B1188E183D681300F70D99 /* iCounselor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B9BE8B5C181C69D900460371 /* iCounselorTests */ = {
+		B9B118B9183D681400F70D99 /* iCounselorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9BE8B71181C69D900460371 /* Build configuration list for PBXNativeTarget "iCounselorTests" */;
+			buildConfigurationList = B9B118CF183D681400F70D99 /* Build configuration list for PBXNativeTarget "iCounselorTests" */;
 			buildPhases = (
-				B9BE8B59181C69D900460371 /* Sources */,
-				B9BE8B5A181C69D900460371 /* Frameworks */,
-				B9BE8B5B181C69D900460371 /* Resources */,
+				B9B118B6183D681400F70D99 /* Sources */,
+				B9B118B7183D681400F70D99 /* Frameworks */,
+				B9B118B8183D681400F70D99 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B9BE8B63181C69D900460371 /* PBXTargetDependency */,
+				B9B118C1183D681400F70D99 /* PBXTargetDependency */,
 			);
 			name = iCounselorTests;
 			productName = iCounselorTests;
-			productReference = B9BE8B5D181C69D900460371 /* iCounselorTests.xctest */;
+			productReference = B9B118BA183D681400F70D99 /* iCounselorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B9BE8B2E181C69D900460371 /* Project object */ = {
+		B9B11886183D681300F70D99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = iCouncil;
+				CLASSPREFIX = iC;
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Addo Solutions";
+				ORGANIZATIONNAME = "Nick Artman";
 				TargetAttributes = {
-					B9BE8B5C181C69D900460371 = {
-						TestTargetID = B9BE8B35181C69D900460371;
+					B9B118B9183D681400F70D99 = {
+						TestTargetID = B9B1188D183D681300F70D99;
 					};
 				};
 			};
-			buildConfigurationList = B9BE8B31181C69D900460371 /* Build configuration list for PBXProject "iCounselor" */;
+			buildConfigurationList = B9B11889183D681300F70D99 /* Build configuration list for PBXProject "iCounselor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,100 +230,99 @@
 				en,
 				Base,
 			);
-			mainGroup = B9BE8B2D181C69D900460371;
-			productRefGroup = B9BE8B37181C69D900460371 /* Products */;
+			mainGroup = B9B11885183D681300F70D99;
+			productRefGroup = B9B1188F183D681300F70D99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9BE8B35181C69D900460371 /* iCounselor */,
-				B9BE8B5C181C69D900460371 /* iCounselorTests */,
+				B9B1188D183D681300F70D99 /* iCounselor */,
+				B9B118B9183D681400F70D99 /* iCounselorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B9BE8B34181C69D900460371 /* Resources */ = {
+		B9B1188C183D681300F70D99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BE8B50181C69D900460371 /* Main_iPad.storyboard in Resources */,
-				B9BE8B58181C69D900460371 /* Images.xcassets in Resources */,
-				B9BE8B4D181C69D900460371 /* Main_iPhone.storyboard in Resources */,
-				B9BE8B44181C69D900460371 /* InfoPlist.strings in Resources */,
+				B9B118AA183D681400F70D99 /* Main_iPad.storyboard in Resources */,
+				B9B118B5183D681400F70D99 /* Images.xcassets in Resources */,
+				B9B118A7183D681400F70D99 /* Main_iPhone.storyboard in Resources */,
+				B9B1189E183D681400F70D99 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9BE8B5B181C69D900460371 /* Resources */ = {
+		B9B118B8183D681400F70D99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BE8B69181C69D900460371 /* InfoPlist.strings in Resources */,
+				B9B118C7183D681400F70D99 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B9BE8B32181C69D900460371 /* Sources */ = {
+		B9B1188A183D681300F70D99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72511A5B182D9B950077EBAD /* ClassInfo.m in Sources */,
-				B9BE8B4A181C69D900460371 /* iCouncilAppDelegate.m in Sources */,
-				B9BE8B53181C69D900460371 /* iCouncilFirstViewController.m in Sources */,
-				72A865E2182D8E46008FE2D5 /* ClassList.xcdatamodeld in Sources */,
-				B9BE8B56181C69D900460371 /* iCouncilSecondViewController.m in Sources */,
-				B9BE8B46181C69D900460371 /* main.m in Sources */,
+				B9B118A4183D681400F70D99 /* iCAppDelegate.m in Sources */,
+				B9B118A0183D681400F70D99 /* main.m in Sources */,
+				B9B118B0183D681400F70D99 /* iCMasterViewController.m in Sources */,
+				B9B118AD183D681400F70D99 /* iCounselor.xcdatamodeld in Sources */,
+				B9B118B3183D681400F70D99 /* iCDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9BE8B59181C69D900460371 /* Sources */ = {
+		B9B118B6183D681400F70D99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BE8B6B181C69D900460371 /* iCounselorTests.m in Sources */,
+				B9B118C9183D681400F70D99 /* iCounselorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B9BE8B63181C69D900460371 /* PBXTargetDependency */ = {
+		B9B118C1183D681400F70D99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9BE8B35181C69D900460371 /* iCounselor */;
-			targetProxy = B9BE8B62181C69D900460371 /* PBXContainerItemProxy */;
+			target = B9B1188D183D681300F70D99 /* iCounselor */;
+			targetProxy = B9B118C0183D681400F70D99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B9BE8B42181C69D900460371 /* InfoPlist.strings */ = {
+		B9B1189C183D681400F70D99 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B9BE8B43181C69D900460371 /* en */,
+				B9B1189D183D681400F70D99 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B9BE8B4B181C69D900460371 /* Main_iPhone.storyboard */ = {
+		B9B118A5183D681400F70D99 /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B9BE8B4C181C69D900460371 /* Base */,
+				B9B118A6183D681400F70D99 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		B9BE8B4E181C69D900460371 /* Main_iPad.storyboard */ = {
+		B9B118A8183D681400F70D99 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B9BE8B4F181C69D900460371 /* Base */,
+				B9B118A9183D681400F70D99 /* Base */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		B9BE8B67181C69D900460371 /* InfoPlist.strings */ = {
+		B9B118C5183D681400F70D99 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B9BE8B68181C69D900460371 /* en */,
+				B9B118C6183D681400F70D99 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -330,7 +330,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B9BE8B6C181C69D900460371 /* Debug */ = {
+		B9B118CA183D681400F70D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -370,7 +370,7 @@
 			};
 			name = Debug;
 		};
-		B9BE8B6D181C69D900460371 /* Release */ = {
+		B9B118CB183D681400F70D99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -404,7 +404,7 @@
 			};
 			name = Release;
 		};
-		B9BE8B6F181C69D900460371 /* Debug */ = {
+		B9B118CD183D681400F70D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -417,7 +417,7 @@
 			};
 			name = Debug;
 		};
-		B9BE8B70181C69D900460371 /* Release */ = {
+		B9B118CE183D681400F70D99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -430,7 +430,7 @@
 			};
 			name = Release;
 		};
-		B9BE8B72181C69D900460371 /* Debug */ = {
+		B9B118D0183D681400F70D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -453,7 +453,7 @@
 			};
 			name = Debug;
 		};
-		B9BE8B73181C69D900460371 /* Release */ = {
+		B9B118D1183D681400F70D99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -475,48 +475,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9BE8B31181C69D900460371 /* Build configuration list for PBXProject "iCounselor" */ = {
+		B9B11889183D681300F70D99 /* Build configuration list for PBXProject "iCounselor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9BE8B6C181C69D900460371 /* Debug */,
-				B9BE8B6D181C69D900460371 /* Release */,
+				B9B118CA183D681400F70D99 /* Debug */,
+				B9B118CB183D681400F70D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9BE8B6E181C69D900460371 /* Build configuration list for PBXNativeTarget "iCounselor" */ = {
+		B9B118CC183D681400F70D99 /* Build configuration list for PBXNativeTarget "iCounselor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9BE8B6F181C69D900460371 /* Debug */,
-				B9BE8B70181C69D900460371 /* Release */,
+				B9B118CD183D681400F70D99 /* Debug */,
+				B9B118CE183D681400F70D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		B9BE8B71181C69D900460371 /* Build configuration list for PBXNativeTarget "iCounselorTests" */ = {
+		B9B118CF183D681400F70D99 /* Build configuration list for PBXNativeTarget "iCounselorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9BE8B72181C69D900460371 /* Debug */,
-				B9BE8B73181C69D900460371 /* Release */,
+				B9B118D0183D681400F70D99 /* Debug */,
+				B9B118D1183D681400F70D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		72A865E0182D8E46008FE2D5 /* ClassList.xcdatamodeld */ = {
+		B9B118AB183D681400F70D99 /* iCounselor.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				72A865E1182D8E46008FE2D5 /* ClassList.xcdatamodel */,
+				B9B118AC183D681400F70D99 /* iCounselor.xcdatamodel */,
 			);
-			currentVersion = 72A865E1182D8E46008FE2D5 /* ClassList.xcdatamodel */;
-			name = ClassList.xcdatamodeld;
-			path = ../ClassList.xcdatamodeld;
+			currentVersion = B9B118AC183D681400F70D99 /* iCounselor.xcdatamodel */;
+			path = iCounselor.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = B9BE8B2E181C69D900460371 /* Project object */;
+	rootObject = B9B11886183D681300F70D99 /* Project object */;
 }
