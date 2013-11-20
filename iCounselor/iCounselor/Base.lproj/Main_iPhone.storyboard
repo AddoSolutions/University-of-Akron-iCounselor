@@ -312,10 +312,10 @@
             </objects>
             <point key="canvasLocation" x="744" y="1163"/>
         </scene>
-        <!--Navigation Controller - Classes-->
+        <!--I Council Third View Controller - Classes-->
         <scene sceneID="i6U-ck-mTa">
             <objects>
-                <navigationController definesPresentationContext="YES" id="RKq-zn-rsM" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="RKq-zn-rsM" customClass="iCouncilThirdViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Classes" id="z7Y-Jb-bX3"/>
                     <navigationItem key="navigationItem" id="Idh-Lh-qpH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fkG-pp-g6T">
