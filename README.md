@@ -3,6 +3,9 @@ iCounselor
 
 Built with the initial intent of use with the University of Akron
 
+This project can be tracked here:  
+https://trello.com/b/B9MFotRD/icounselor-app
+
 # Data Model
 
 * DegreeQualifications
