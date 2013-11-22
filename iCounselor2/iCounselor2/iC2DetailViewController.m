@@ -28,7 +28,12 @@
 
     if (self.masterPopoverController != nil) {
         [self.masterPopoverController dismissPopoverAnimated:YES];
-    }        
+    }
+}
+
+// Here so that the description label will scale to fit the text it contains
+- (void) viewDidLayoutSubviews {
+    [self.description sizeToFit];
 }
 
 - (void)configureView
@@ -38,7 +43,13 @@
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
         
-        self.navigationItem.title = @"Class Info"; // TODO set this to the specific class name
+        // TODO populate these values based on the specific data for the class stored in Core Data
+        self.navigationItem.title = @"Class Info";
+        self.sectionNumber.text = @"3460:225";
+        self.credits.text = @"4";
+        self.prerequisites.text = @"Ehhh"; // TODO User should be able to click these to take them to that class's details
+        self.alternatives.text = @"Hmmm"; // TODO same as prerequisites
+        self.description.text = @"You will be schooled here...ERP MERP HERusofpodskfdsiuhfjsioafdshuifosdjom48ru89w340ri34 r09wirt0w9 itw8 t908t hwt 80u ";
     }
 }
 
