@@ -27,6 +27,9 @@
 		B9D08DFD183FFEC5009142EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D08DFB183FFEC5009142EB /* InfoPlist.strings */; };
 		B9D08DFF183FFEC5009142EB /* iCouncelorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08DFE183FFEC5009142EB /* iCouncelorTests.m */; };
 		B9D08E0A183FFEFB009142EB /* iCOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E09183FFEFB009142EB /* iCOverviewViewController.m */; };
+		B9D08E541840074A009142EB /* iCRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E531840074A009142EB /* iCRootTabBarController.m */; };
+		B9D08E581840096D009142EB /* iCBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E571840096D009142EB /* iCBaseClass.m */; };
+		B9D08E5B18400D44009142EB /* iCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E5A18400D44009142EB /* iCNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,12 @@
 		B9D08DFE183FFEC5009142EB /* iCouncelorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCouncelorTests.m; sourceTree = "<group>"; };
 		B9D08E08183FFEFB009142EB /* iCOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCOverviewViewController.h; sourceTree = "<group>"; };
 		B9D08E09183FFEFB009142EB /* iCOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCOverviewViewController.m; sourceTree = "<group>"; };
+		B9D08E521840074A009142EB /* iCRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCRootTabBarController.h; sourceTree = "<group>"; };
+		B9D08E531840074A009142EB /* iCRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCRootTabBarController.m; sourceTree = "<group>"; };
+		B9D08E561840096D009142EB /* iCBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCBaseClass.h; sourceTree = "<group>"; };
+		B9D08E571840096D009142EB /* iCBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCBaseClass.m; sourceTree = "<group>"; };
+		B9D08E5918400D44009142EB /* iCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCNavigationController.h; sourceTree = "<group>"; };
+		B9D08E5A18400D44009142EB /* iCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,14 +137,18 @@
 		B9D08DCF183FFEC5009142EB /* iCouncelor */ = {
 			isa = PBXGroup;
 			children = (
-				B9D08DD8183FFEC5009142EB /* iCAppDelegate.h */,
-				B9D08DD9183FFEC5009142EB /* iCAppDelegate.m */,
 				B9D08DDB183FFEC5009142EB /* Main_iPhone.storyboard */,
 				B9D08DDE183FFEC5009142EB /* Main_iPad.storyboard */,
-				B9D08DE4183FFEC5009142EB /* iCMasterViewController.h */,
-				B9D08DE5183FFEC5009142EB /* iCMasterViewController.m */,
+				B9D08DD8183FFEC5009142EB /* iCAppDelegate.h */,
+				B9D08DD9183FFEC5009142EB /* iCAppDelegate.m */,
+				B9D08E521840074A009142EB /* iCRootTabBarController.h */,
+				B9D08E531840074A009142EB /* iCRootTabBarController.m */,
 				B9D08E08183FFEFB009142EB /* iCOverviewViewController.h */,
 				B9D08E09183FFEFB009142EB /* iCOverviewViewController.m */,
+				B9D08E5918400D44009142EB /* iCNavigationController.h */,
+				B9D08E5A18400D44009142EB /* iCNavigationController.m */,
+				B9D08DE4183FFEC5009142EB /* iCMasterViewController.h */,
+				B9D08DE5183FFEC5009142EB /* iCMasterViewController.m */,
 				B9D08DE7183FFEC5009142EB /* iCDetailViewController.h */,
 				B9D08DE8183FFEC5009142EB /* iCDetailViewController.m */,
 				B9D08DEA183FFEC5009142EB /* Images.xcassets */,
@@ -148,6 +161,8 @@
 		B9D08DD0183FFEC5009142EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9D08E561840096D009142EB /* iCBaseClass.h */,
+				B9D08E571840096D009142EB /* iCBaseClass.m */,
 				B9D08DD1183FFEC5009142EB /* iCouncelor-Info.plist */,
 				B9D08DD2183FFEC5009142EB /* InfoPlist.strings */,
 				B9D08DD5183FFEC5009142EB /* main.m */,
@@ -273,10 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D08E541840074A009142EB /* iCRootTabBarController.m in Sources */,
 				B9D08DE3183FFEC5009142EB /* iCouncelor.xcdatamodeld in Sources */,
+				B9D08E5B18400D44009142EB /* iCNavigationController.m in Sources */,
 				B9D08DDA183FFEC5009142EB /* iCAppDelegate.m in Sources */,
 				B9D08E0A183FFEFB009142EB /* iCOverviewViewController.m in Sources */,
 				B9D08DE6183FFEC5009142EB /* iCMasterViewController.m in Sources */,
+				B9D08E581840096D009142EB /* iCBaseClass.m in Sources */,
 				B9D08DD6183FFEC5009142EB /* main.m in Sources */,
 				B9D08DE9183FFEC5009142EB /* iCDetailViewController.m in Sources */,
 			);

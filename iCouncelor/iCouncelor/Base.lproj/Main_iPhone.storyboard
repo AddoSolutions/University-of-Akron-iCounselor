@@ -15,6 +15,14 @@
                     <view key="view" contentMode="scaleToFill" id="uZg-uU-QiR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr9-xJ-mcq">
+                                <rect key="frame" x="96" y="266" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="cAh-SJ-YD7"/>
@@ -23,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="-375" y="27"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--IC Root Tab Bar Controller-->
         <scene sceneID="DBm-3S-Mtf">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="3wb-fl-eJ3" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="3wb-fl-eJ3" customClass="iCRootTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Ryo-l8-rqc">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -42,10 +50,11 @@
             </objects>
             <point key="canvasLocation" x="-917" y="357"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--IC Navigation Controller - Item-->
         <scene sceneID="cUi-kZ-frf">
             <objects>
-                <navigationController id="rS3-R9-Ivy" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
+                <navigationController id="rS3-R9-Ivy" customClass="iCNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="8le-wc-QLz"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
@@ -54,7 +63,6 @@
                         <segue destination="pGg-6v-bdr" kind="relationship" relationship="rootViewController" id="RxB-wf-QIq"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-375" y="684"/>
         </scene>
