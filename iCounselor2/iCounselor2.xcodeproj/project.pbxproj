@@ -26,6 +26,9 @@
 		725DD43F183FEB81004EAA92 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725DD417183FEB80004EAA92 /* CoreData.framework */; };
 		725DD447183FEB81004EAA92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 725DD445183FEB81004EAA92 /* InfoPlist.strings */; };
 		725DD449183FEB81004EAA92 /* iCounselor2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725DD448183FEB81004EAA92 /* iCounselor2Tests.m */; };
+		725DD454183FEDE3004EAA92 /* ClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 725DD453183FEDE3004EAA92 /* ClassInfo.m */; };
+		725DD457183FEDEE004EAA92 /* ClassTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 725DD456183FEDEE004EAA92 /* ClassTags.m */; };
+		725DD45A183FEDFB004EAA92 /* ClassTaken.m in Sources */ = {isa = PBXBuildFile; fileRef = 725DD459183FEDFB004EAA92 /* ClassTaken.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		725DD444183FEB81004EAA92 /* iCounselor2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCounselor2Tests-Info.plist"; sourceTree = "<group>"; };
 		725DD446183FEB81004EAA92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		725DD448183FEB81004EAA92 /* iCounselor2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCounselor2Tests.m; sourceTree = "<group>"; };
+		725DD452183FEDE3004EAA92 /* ClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassInfo.h; sourceTree = "<group>"; };
+		725DD453183FEDE3004EAA92 /* ClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassInfo.m; sourceTree = "<group>"; };
+		725DD455183FEDEE004EAA92 /* ClassTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTags.h; sourceTree = "<group>"; };
+		725DD456183FEDEE004EAA92 /* ClassTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTags.m; sourceTree = "<group>"; };
+		725DD458183FEDFB004EAA92 /* ClassTaken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTaken.h; sourceTree = "<group>"; };
+		725DD459183FEDFB004EAA92 /* ClassTaken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTaken.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,10 @@
 		725DD405183FEB80004EAA92 = {
 			isa = PBXGroup;
 			children = (
+				725DD458183FEDFB004EAA92 /* ClassTaken.h */,
+				725DD459183FEDFB004EAA92 /* ClassTaken.m */,
+				725DD455183FEDEE004EAA92 /* ClassTags.h */,
+				725DD456183FEDEE004EAA92 /* ClassTags.m */,
 				725DD419183FEB80004EAA92 /* iCounselor2 */,
 				725DD442183FEB81004EAA92 /* iCounselor2Tests */,
 				725DD410183FEB80004EAA92 /* Frameworks */,
@@ -135,6 +148,8 @@
 				725DD432183FEB80004EAA92 /* iC2DetailViewController.m */,
 				725DD434183FEB80004EAA92 /* Images.xcassets */,
 				725DD42B183FEB80004EAA92 /* iCounselor2.xcdatamodeld */,
+				725DD452183FEDE3004EAA92 /* ClassInfo.h */,
+				725DD453183FEDE3004EAA92 /* ClassInfo.m */,
 				725DD41A183FEB80004EAA92 /* Supporting Files */,
 			);
 			path = iCounselor2;
@@ -268,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725DD45A183FEDFB004EAA92 /* ClassTaken.m in Sources */,
+				725DD457183FEDEE004EAA92 /* ClassTags.m in Sources */,
+				725DD454183FEDE3004EAA92 /* ClassInfo.m in Sources */,
 				725DD420183FEB80004EAA92 /* main.m in Sources */,
 				725DD430183FEB80004EAA92 /* iC2MasterViewController.m in Sources */,
 				725DD424183FEB80004EAA92 /* iC2AppDelegate.m in Sources */,
