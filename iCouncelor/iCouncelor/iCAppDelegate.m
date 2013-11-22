@@ -10,6 +10,7 @@
 
 #import "iCMasterViewController.h"
 #import "iCRootTabBarController.h"
+#import "UAClass.h"
 
 @implementation iCAppDelegate
 
@@ -26,6 +27,9 @@
     for (id vc in controller.viewControllers) {
         [vc setManagedObjectContext:self.managedObjectContext];
     }
+    
+    
+    
     
     return YES;
     
@@ -46,11 +50,41 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    
+    
+    
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    NSURL *url = [NSURL URLWithString:@"http://raw.github.com/AddoSolutions/University-of-Akron-iCounselor/master/remote-plist.plist"];
+    
+    NSDictionary *allData = [[NSDictionary alloc] initWithContentsOfURL:url];
+    
+    NSDictionary *classData = [allData valueForKey:@"courses"];
+    
+    NSLog(@"classData contains %i dictionaries.", [classData count]);
+    for (NSDictionary *eachClassRaw in classData) {
+        
+        UAClass *class =[NSEntityDescription insertNewObjectForEntityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext ];
+        
+        
+        
+        //... repeat for all attributes
+        //[plantMO setValue:gardenManObj forKey:@"gardent"];
+        
+        class.name = [eachClassRaw valueForKey:@"name"];
+        
+        NSLog(@"Got %@ as a name.", class.name);
+        
+        
+    }
+    
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -95,6 +129,7 @@
 // If the model doesn't already exist, it is created from the application's model.
 - (NSManagedObjectModel *)managedObjectModel
 {
+    
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }

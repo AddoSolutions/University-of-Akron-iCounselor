@@ -30,6 +30,7 @@
 		B9D08E541840074A009142EB /* iCRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E531840074A009142EB /* iCRootTabBarController.m */; };
 		B9D08E581840096D009142EB /* iCBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E571840096D009142EB /* iCBaseClass.m */; };
 		B9D08E5B18400D44009142EB /* iCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E5A18400D44009142EB /* iCNavigationController.m */; };
+		B9D08E5E18401582009142EB /* UAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E5D18401582009142EB /* UAClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		B9D08E571840096D009142EB /* iCBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCBaseClass.m; sourceTree = "<group>"; };
 		B9D08E5918400D44009142EB /* iCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCNavigationController.h; sourceTree = "<group>"; };
 		B9D08E5A18400D44009142EB /* iCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCNavigationController.m; sourceTree = "<group>"; };
+		B9D08E5C18401582009142EB /* UAClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAClass.h; sourceTree = "<group>"; };
+		B9D08E5D18401582009142EB /* UAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				B9D08DE8183FFEC5009142EB /* iCDetailViewController.m */,
 				B9D08DEA183FFEC5009142EB /* Images.xcassets */,
 				B9D08DE1183FFEC5009142EB /* iCouncelor.xcdatamodeld */,
+				B9D08E5C18401582009142EB /* UAClass.h */,
+				B9D08E5D18401582009142EB /* UAClass.m */,
 				B9D08DD0183FFEC5009142EB /* Supporting Files */,
 			);
 			path = iCouncelor;
@@ -296,6 +301,7 @@
 				B9D08DE6183FFEC5009142EB /* iCMasterViewController.m in Sources */,
 				B9D08E581840096D009142EB /* iCBaseClass.m in Sources */,
 				B9D08DD6183FFEC5009142EB /* main.m in Sources */,
+				B9D08E5E18401582009142EB /* UAClass.m in Sources */,
 				B9D08DE9183FFEC5009142EB /* iCDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
