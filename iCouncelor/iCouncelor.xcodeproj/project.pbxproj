@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9D08DC8183FFEC5009142EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC7183FFEC5009142EB /* Foundation.framework */; };
+		B9D08DCA183FFEC5009142EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */; };
+		B9D08DCC183FFEC5009142EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DCB183FFEC5009142EB /* UIKit.framework */; };
+		B9D08DCE183FFEC5009142EB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DCD183FFEC5009142EB /* CoreData.framework */; };
+		B9D08DD4183FFEC5009142EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D08DD2183FFEC5009142EB /* InfoPlist.strings */; };
+		B9D08DD6183FFEC5009142EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08DD5183FFEC5009142EB /* main.m */; };
+		B9D08DDA183FFEC5009142EB /* iCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08DD9183FFEC5009142EB /* iCAppDelegate.m */; };
+		B9D08DDD183FFEC5009142EB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D08DDB183FFEC5009142EB /* Main_iPhone.storyboard */; };
+		B9D08DE0183FFEC5009142EB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D08DDE183FFEC5009142EB /* Main_iPad.storyboard */; };
+		B9D08DE3183FFEC5009142EB /* iCouncelor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9D08DE1183FFEC5009142EB /* iCouncelor.xcdatamodeld */; };
+		B9D08DE6183FFEC5009142EB /* iCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08DE5183FFEC5009142EB /* iCMasterViewController.m */; };
+		B9D08DE9183FFEC5009142EB /* iCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08DE8183FFEC5009142EB /* iCDetailViewController.m */; };
+		B9D08DEB183FFEC5009142EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D08DEA183FFEC5009142EB /* Images.xcassets */; };
+		B9D08DF2183FFEC5009142EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DF1183FFEC5009142EB /* XCTest.framework */; };
+		B9D08DF3183FFEC5009142EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC7183FFEC5009142EB /* Foundation.framework */; };
+		B9D08DF4183FFEC5009142EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DCB183FFEC5009142EB /* UIKit.framework */; };
+		B9D08DF5183FFEC5009142EB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DCD183FFEC5009142EB /* CoreData.framework */; };
+		B9D08DFD183FFEC5009142EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D08DFB183FFEC5009142EB /* InfoPlist.strings */; };
+		B9D08DFF183FFEC5009142EB /* iCouncelorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08DFE183FFEC5009142EB /* iCouncelorTests.m */; };
+		B9D08E0A183FFEFB009142EB /* iCOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E09183FFEFB009142EB /* iCOverviewViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9D08DF6183FFEC5009142EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D08DBC183FFEC5009142EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9D08DC3183FFEC5009142EB;
+			remoteInfo = iCouncelor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9D08DC4183FFEC5009142EB /* iCouncelor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCouncelor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D08DC7183FFEC5009142EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9D08DCB183FFEC5009142EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9D08DCD183FFEC5009142EB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B9D08DD1183FFEC5009142EB /* iCouncelor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCouncelor-Info.plist"; sourceTree = "<group>"; };
+		B9D08DD3183FFEC5009142EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9D08DD5183FFEC5009142EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9D08DD7183FFEC5009142EB /* iCouncelor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCouncelor-Prefix.pch"; sourceTree = "<group>"; };
+		B9D08DD8183FFEC5009142EB /* iCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCAppDelegate.h; sourceTree = "<group>"; };
+		B9D08DD9183FFEC5009142EB /* iCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCAppDelegate.m; sourceTree = "<group>"; };
+		B9D08DDC183FFEC5009142EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B9D08DDF183FFEC5009142EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B9D08DE2183FFEC5009142EB /* iCouncelor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iCouncelor.xcdatamodel; sourceTree = "<group>"; };
+		B9D08DE4183FFEC5009142EB /* iCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCMasterViewController.h; sourceTree = "<group>"; };
+		B9D08DE5183FFEC5009142EB /* iCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCMasterViewController.m; sourceTree = "<group>"; };
+		B9D08DE7183FFEC5009142EB /* iCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCDetailViewController.h; sourceTree = "<group>"; };
+		B9D08DE8183FFEC5009142EB /* iCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCDetailViewController.m; sourceTree = "<group>"; };
+		B9D08DEA183FFEC5009142EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B9D08DF0183FFEC5009142EB /* iCouncelorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCouncelorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D08DF1183FFEC5009142EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B9D08DFA183FFEC5009142EB /* iCouncelorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCouncelorTests-Info.plist"; sourceTree = "<group>"; };
+		B9D08DFC183FFEC5009142EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9D08DFE183FFEC5009142EB /* iCouncelorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCouncelorTests.m; sourceTree = "<group>"; };
+		B9D08E08183FFEFB009142EB /* iCOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCOverviewViewController.h; sourceTree = "<group>"; };
+		B9D08E09183FFEFB009142EB /* iCOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCOverviewViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9D08DC1183FFEC5009142EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D08DCA183FFEC5009142EB /* CoreGraphics.framework in Frameworks */,
+				B9D08DCE183FFEC5009142EB /* CoreData.framework in Frameworks */,
+				B9D08DCC183FFEC5009142EB /* UIKit.framework in Frameworks */,
+				B9D08DC8183FFEC5009142EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D08DED183FFEC5009142EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D08DF2183FFEC5009142EB /* XCTest.framework in Frameworks */,
+				B9D08DF5183FFEC5009142EB /* CoreData.framework in Frameworks */,
+				B9D08DF4183FFEC5009142EB /* UIKit.framework in Frameworks */,
+				B9D08DF3183FFEC5009142EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9D08DBB183FFEC5009142EB = {
+			isa = PBXGroup;
+			children = (
+				B9D08DCF183FFEC5009142EB /* iCouncelor */,
+				B9D08DF8183FFEC5009142EB /* iCouncelorTests */,
+				B9D08DC6183FFEC5009142EB /* Frameworks */,
+				B9D08DC5183FFEC5009142EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9D08DC5183FFEC5009142EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9D08DC4183FFEC5009142EB /* iCouncelor.app */,
+				B9D08DF0183FFEC5009142EB /* iCouncelorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9D08DC6183FFEC5009142EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9D08DC7183FFEC5009142EB /* Foundation.framework */,
+				B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */,
+				B9D08DCB183FFEC5009142EB /* UIKit.framework */,
+				B9D08DCD183FFEC5009142EB /* CoreData.framework */,
+				B9D08DF1183FFEC5009142EB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9D08DCF183FFEC5009142EB /* iCouncelor */ = {
+			isa = PBXGroup;
+			children = (
+				B9D08DD8183FFEC5009142EB /* iCAppDelegate.h */,
+				B9D08DD9183FFEC5009142EB /* iCAppDelegate.m */,
+				B9D08DDB183FFEC5009142EB /* Main_iPhone.storyboard */,
+				B9D08DDE183FFEC5009142EB /* Main_iPad.storyboard */,
+				B9D08DE4183FFEC5009142EB /* iCMasterViewController.h */,
+				B9D08DE5183FFEC5009142EB /* iCMasterViewController.m */,
+				B9D08E08183FFEFB009142EB /* iCOverviewViewController.h */,
+				B9D08E09183FFEFB009142EB /* iCOverviewViewController.m */,
+				B9D08DE7183FFEC5009142EB /* iCDetailViewController.h */,
+				B9D08DE8183FFEC5009142EB /* iCDetailViewController.m */,
+				B9D08DEA183FFEC5009142EB /* Images.xcassets */,
+				B9D08DE1183FFEC5009142EB /* iCouncelor.xcdatamodeld */,
+				B9D08DD0183FFEC5009142EB /* Supporting Files */,
+			);
+			path = iCouncelor;
+			sourceTree = "<group>";
+		};
+		B9D08DD0183FFEC5009142EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9D08DD1183FFEC5009142EB /* iCouncelor-Info.plist */,
+				B9D08DD2183FFEC5009142EB /* InfoPlist.strings */,
+				B9D08DD5183FFEC5009142EB /* main.m */,
+				B9D08DD7183FFEC5009142EB /* iCouncelor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9D08DF8183FFEC5009142EB /* iCouncelorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9D08DFE183FFEC5009142EB /* iCouncelorTests.m */,
+				B9D08DF9183FFEC5009142EB /* Supporting Files */,
+			);
+			path = iCouncelorTests;
+			sourceTree = "<group>";
+		};
+		B9D08DF9183FFEC5009142EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9D08DFA183FFEC5009142EB /* iCouncelorTests-Info.plist */,
+				B9D08DFB183FFEC5009142EB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9D08DC3183FFEC5009142EB /* iCouncelor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D08E02183FFEC5009142EB /* Build configuration list for PBXNativeTarget "iCouncelor" */;
+			buildPhases = (
+				B9D08DC0183FFEC5009142EB /* Sources */,
+				B9D08DC1183FFEC5009142EB /* Frameworks */,
+				B9D08DC2183FFEC5009142EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCouncelor;
+			productName = iCouncelor;
+			productReference = B9D08DC4183FFEC5009142EB /* iCouncelor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9D08DEF183FFEC5009142EB /* iCouncelorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D08E05183FFEC5009142EB /* Build configuration list for PBXNativeTarget "iCouncelorTests" */;
+			buildPhases = (
+				B9D08DEC183FFEC5009142EB /* Sources */,
+				B9D08DED183FFEC5009142EB /* Frameworks */,
+				B9D08DEE183FFEC5009142EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9D08DF7183FFEC5009142EB /* PBXTargetDependency */,
+			);
+			name = iCouncelorTests;
+			productName = iCouncelorTests;
+			productReference = B9D08DF0183FFEC5009142EB /* iCouncelorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9D08DBC183FFEC5009142EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = iC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Nick Artman";
+				TargetAttributes = {
+					B9D08DEF183FFEC5009142EB = {
+						TestTargetID = B9D08DC3183FFEC5009142EB;
+					};
+				};
+			};
+			buildConfigurationList = B9D08DBF183FFEC5009142EB /* Build configuration list for PBXProject "iCouncelor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9D08DBB183FFEC5009142EB;
+			productRefGroup = B9D08DC5183FFEC5009142EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9D08DC3183FFEC5009142EB /* iCouncelor */,
+				B9D08DEF183FFEC5009142EB /* iCouncelorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9D08DC2183FFEC5009142EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D08DE0183FFEC5009142EB /* Main_iPad.storyboard in Resources */,
+				B9D08DEB183FFEC5009142EB /* Images.xcassets in Resources */,
+				B9D08DDD183FFEC5009142EB /* Main_iPhone.storyboard in Resources */,
+				B9D08DD4183FFEC5009142EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D08DEE183FFEC5009142EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D08DFD183FFEC5009142EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9D08DC0183FFEC5009142EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D08DE3183FFEC5009142EB /* iCouncelor.xcdatamodeld in Sources */,
+				B9D08DDA183FFEC5009142EB /* iCAppDelegate.m in Sources */,
+				B9D08E0A183FFEFB009142EB /* iCOverviewViewController.m in Sources */,
+				B9D08DE6183FFEC5009142EB /* iCMasterViewController.m in Sources */,
+				B9D08DD6183FFEC5009142EB /* main.m in Sources */,
+				B9D08DE9183FFEC5009142EB /* iCDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D08DEC183FFEC5009142EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D08DFF183FFEC5009142EB /* iCouncelorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9D08DF7183FFEC5009142EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9D08DC3183FFEC5009142EB /* iCouncelor */;
+			targetProxy = B9D08DF6183FFEC5009142EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9D08DD2183FFEC5009142EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D08DD3183FFEC5009142EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9D08DDB183FFEC5009142EB /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D08DDC183FFEC5009142EB /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B9D08DDE183FFEC5009142EB /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D08DDF183FFEC5009142EB /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B9D08DFB183FFEC5009142EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D08DFC183FFEC5009142EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9D08E00183FFEC5009142EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9D08E01183FFEC5009142EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9D08E03183FFEC5009142EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
+				INFOPLIST_FILE = "iCouncelor/iCouncelor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B9D08E04183FFEC5009142EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
+				INFOPLIST_FILE = "iCouncelor/iCouncelor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B9D08E06183FFEC5009142EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iCouncelor.app/iCouncelor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iCouncelorTests/iCouncelorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B9D08E07183FFEC5009142EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iCouncelor.app/iCouncelor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
+				INFOPLIST_FILE = "iCouncelorTests/iCouncelorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9D08DBF183FFEC5009142EB /* Build configuration list for PBXProject "iCouncelor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D08E00183FFEC5009142EB /* Debug */,
+				B9D08E01183FFEC5009142EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D08E02183FFEC5009142EB /* Build configuration list for PBXNativeTarget "iCouncelor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D08E03183FFEC5009142EB /* Debug */,
+				B9D08E04183FFEC5009142EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9D08E05183FFEC5009142EB /* Build configuration list for PBXNativeTarget "iCouncelorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D08E06183FFEC5009142EB /* Debug */,
+				B9D08E07183FFEC5009142EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B9D08DE1183FFEC5009142EB /* iCouncelor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9D08DE2183FFEC5009142EB /* iCouncelor.xcdatamodel */,
+			);
+			currentVersion = B9D08DE2183FFEC5009142EB /* iCouncelor.xcdatamodel */;
+			path = iCouncelor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B9D08DBC183FFEC5009142EB /* Project object */;
+}
