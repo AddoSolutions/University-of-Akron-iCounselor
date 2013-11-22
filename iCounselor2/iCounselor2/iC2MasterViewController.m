@@ -31,6 +31,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
+    // TODO remove the add button at some point, since user should not be able to add classes to the class list, only remove them.
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (iC2DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];

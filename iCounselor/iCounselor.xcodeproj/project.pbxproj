@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725581B6183FFE01006F767F /* ClassTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 725581B5183FFE01006F767F /* ClassTags.m */; };
+		725581B9183FFE02006F767F /* ClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 725581B8183FFE02006F767F /* ClassInfo.m */; };
+		725581BC183FFE02006F767F /* ClassTaken.m in Sources */ = {isa = PBXBuildFile; fileRef = 725581BB183FFE02006F767F /* ClassTaken.m */; };
 		B9B11892183D681300F70D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11891183D681300F70D99 /* Foundation.framework */; };
 		B9B11894183D681300F70D99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11893183D681300F70D99 /* CoreGraphics.framework */; };
 		B9B11896183D681300F70D99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B11895183D681300F70D99 /* UIKit.framework */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		725581B4183FFE01006F767F /* ClassTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTags.h; sourceTree = "<group>"; };
+		725581B5183FFE01006F767F /* ClassTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTags.m; sourceTree = "<group>"; };
+		725581B7183FFE02006F767F /* ClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassInfo.h; sourceTree = "<group>"; };
+		725581B8183FFE02006F767F /* ClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassInfo.m; sourceTree = "<group>"; };
+		725581BA183FFE02006F767F /* ClassTaken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTaken.h; sourceTree = "<group>"; };
+		725581BB183FFE02006F767F /* ClassTaken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTaken.m; sourceTree = "<group>"; };
 		B9B1188E183D681300F70D99 /* iCounselor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCounselor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B11891183D681300F70D99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9B11893183D681300F70D99 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +144,12 @@
 				B9B118B2183D681400F70D99 /* iCDetailViewController.m */,
 				B9B118B4183D681400F70D99 /* Images.xcassets */,
 				B9B118AB183D681400F70D99 /* iCounselor.xcdatamodeld */,
+				725581BA183FFE02006F767F /* ClassTaken.h */,
+				725581BB183FFE02006F767F /* ClassTaken.m */,
+				725581B7183FFE02006F767F /* ClassInfo.h */,
+				725581B8183FFE02006F767F /* ClassInfo.m */,
+				725581B4183FFE01006F767F /* ClassTags.h */,
+				725581B5183FFE01006F767F /* ClassTags.m */,
 				B9B1189A183D681400F70D99 /* Supporting Files */,
 			);
 			path = iCounselor;
@@ -268,9 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725581BC183FFE02006F767F /* ClassTaken.m in Sources */,
 				B9B118A4183D681400F70D99 /* iCAppDelegate.m in Sources */,
 				B9B118A0183D681400F70D99 /* main.m in Sources */,
+				725581B9183FFE02006F767F /* ClassInfo.m in Sources */,
 				B9B118B0183D681400F70D99 /* iCMasterViewController.m in Sources */,
+				725581B6183FFE01006F767F /* ClassTags.m in Sources */,
 				B9B118AD183D681400F70D99 /* iCounselor.xcdatamodeld in Sources */,
 				B9B118B3183D681400F70D99 /* iCDetailViewController.m in Sources */,
 			);
@@ -491,6 +509,7 @@
 				B9B118CE183D681400F70D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9B118CF183D681400F70D99 /* Build configuration list for PBXNativeTarget "iCounselorTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +518,7 @@
 				B9B118D1183D681400F70D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

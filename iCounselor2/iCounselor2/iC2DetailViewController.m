@@ -37,6 +37,8 @@
 
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        
+        self.navigationItem.title = @"Class Info"; // TODO set this to the specific class name
     }
 }
 
