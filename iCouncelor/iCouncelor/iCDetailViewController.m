@@ -37,6 +37,14 @@
 
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        
+        // TODO assign fields of detail view based on data in class entity entry
+        self.navigationItem.title = @"MERP";
+        self.className.text = @"iOS Development";
+        self.classSubject.text = @"3460";
+        self.classNumber.text = @"489";
+        self.classCredits.text = @"3";
+        self.classDescription.text = @"Dr. Collard is the best professor ever!";
     }
 }
 
@@ -45,6 +53,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
 }
 
 - (void)didReceiveMemoryWarning
