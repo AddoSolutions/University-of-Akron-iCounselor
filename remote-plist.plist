@@ -27,7 +27,7 @@
                 <key>number</key>
                 <string>401</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Probability and Statistics for Engineers</string>
                 <key>credits</key>
@@ -58,7 +58,7 @@
                 <key>number</key>
                 <string>461</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Applied Statistics I</string>
                 <key>credits</key>
@@ -89,7 +89,7 @@
                 <key>number</key>
                 <string>320</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Computer Systems</string>
                 <key>credits</key>
@@ -114,13 +114,13 @@
                 <key>number</key>
                 <string>208</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Introduction to Discrete Mathematics</string>
                 <key>credits</key>
                 <integer>4</integer>
                 <key>description</key>
-                <string>A foundation course in discrete mathematics with applications. Topics include sets, number systems, Boolean Algebra, logic, relations, functions, recursion, matrices, induction, graphs, and trees.</string>
+                <string>A foundation course in discrete mathematics with applications. Topics include sets, number systems, string Algebra, logic, relations, functions, recursion, matrices, induction, graphs, and trees.</string>
                 <key>tags</key>
                 <array>
                     <string>systems-core</string>
@@ -139,7 +139,7 @@
                 <key>number</key>
                 <string>221</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Analytic Geometry-Calculus I</string>
                 <key>credits</key>
@@ -164,7 +164,7 @@
                 <key>number</key>
                 <string>222</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Analytic Geometry-Calculus II</string>
                 <key>credits</key>
@@ -195,7 +195,7 @@
                 <key>number</key>
                 <string>301</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Management: Principles and Concepts</string>
                 <key>credits</key>
@@ -219,7 +219,7 @@
                 <key>number</key>
                 <string>480</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Introduction to Health-Care Management</string>
                 <key>credits</key>
@@ -243,7 +243,7 @@
                 <key>number</key>
                 <string>310</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Business Information Systems</string>
                 <key>credits</key>
@@ -268,7 +268,7 @@
                 <key>number</key>
                 <string>209</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Computer Science I</string>
                 <key>credits</key>
@@ -293,7 +293,7 @@
                 <key>number</key>
                 <string>210</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Computer Science II</string>
                 <key>credits</key>
@@ -324,7 +324,7 @@
                 <key>number</key>
                 <string>307</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Internet Systems Programming</string>
                 <key>credits</key>
@@ -355,7 +355,7 @@
                 <key>number</key>
                 <string>316</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Data Structures</string>
                 <key>credits</key>
@@ -392,7 +392,7 @@
                 <key>number</key>
                 <string>408</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Windows Programming</string>
                 <key>credits</key>
@@ -422,7 +422,7 @@
                 <key>number</key>
                 <string>421</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Object Oriented Programming</string>
                 <key>credits</key>
@@ -453,7 +453,7 @@
                 <key>number</key>
                 <string>426</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Operating Systems</string>
                 <key>credits</key>
@@ -496,7 +496,7 @@
                 <key>number</key>
                 <string>325</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Operating Systems Concepts</string>
                 <key>credits</key>
@@ -539,7 +539,7 @@
                 <key>number</key>
                 <string>428</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Unix System Programming</string>
                 <key>credits</key>
@@ -569,7 +569,7 @@
                 <key>number</key>
                 <string>435</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Algorithms</string>
                 <key>credits</key>
@@ -606,7 +606,7 @@
                 <key>number</key>
                 <string>440</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Compiler Design</string>
                 <key>credits</key>
@@ -636,7 +636,7 @@
                 <key>number</key>
                 <string>445</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Introduction to Bioinformatics</string>
                 <key>credits</key>
@@ -666,7 +666,7 @@
                 <key>number</key>
                 <string>453</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Computer Security</string>
                 <key>credits</key>
@@ -696,7 +696,7 @@
                 <key>number</key>
                 <string>455</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Data Communication and Computer Networks</string>
                 <key>credits</key>
@@ -726,7 +726,7 @@
                 <key>number</key>
                 <string>457</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Computer Graphics</string>
                 <key>credits</key>
@@ -756,7 +756,7 @@
                 <key>number</key>
                 <string>460</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Artificial Intelligence and Heuristic Programming</string>
                 <key>credits</key>
@@ -786,7 +786,7 @@
                 <key>number</key>
                 <string>475</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Database Management</string>
                 <key>credits</key>
@@ -817,7 +817,7 @@
                 <key>number</key>
                 <string>477</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Introduction to Parallel Processing</string>
                 <key>credits</key>
@@ -847,7 +847,7 @@
                 <key>number</key>
                 <string>480</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Software Engineering</string>
                 <key>credits</key>
@@ -878,7 +878,7 @@
                 <key>number</key>
                 <string>490</string>
                 <key>available</key>
-                <boolean>1</boolean>
+                <string>1</string>
                 <key>name</key>
                 <string>Senior Seminar</string>
                 <key>credits</key>
