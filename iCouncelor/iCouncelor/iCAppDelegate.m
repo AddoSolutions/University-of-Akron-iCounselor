@@ -77,7 +77,27 @@
         //... repeat for all attributes
         //[plantMO setValue:gardenManObj forKey:@"gardent"];
         
+        /*
+         subject
+         number
+         available
+         name
+         credits
+         description
+         tags
+         prerequisites
+         alternatives
+         */
+        
+        class.subject = [eachClassRaw valueForKey:@"subject"];
+        class.number = [eachClassRaw valueForKey:@"number"];
+        class.available = [eachClassRaw valueForKey:@"available"];
         class.name = [eachClassRaw valueForKey:@"name"];
+        class.credits = [eachClassRaw valueForKey:@"credits"];
+        class.desc = [eachClassRaw valueForKey:@"description"];
+        //class.tags = [eachClassRaw valueForKey:@"tags"];
+        //class.prerequisites = [eachClassRaw valueForKey:@"prerequisites"];
+        //class.alternatives = [eachClassRaw valueForKey:@"alternatives"];
         
         NSLog(@"Got %@ as a name.", class.name);
         

@@ -7,10 +7,16 @@
         <userInfo/>
     </entity>
     <entity name="UAClass" representedClassName="Class" syncable="YES">
+        <attribute name="alternatives" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="available" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="credits" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="section" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="prerequisites" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
     <elements>
         <element name="Event" positionX="0" positionY="0" width="0" height="0"/>

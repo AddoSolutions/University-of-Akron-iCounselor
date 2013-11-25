@@ -2,7 +2,7 @@
 //  Class.h
 //  iCouncelor
 //
-//  Created by Nick Artman on 11/22/13.
+//  Created by Nick Artman on 11/25/13.
 //  Copyright (c) 2013 Nick Artman. All rights reserved.
 //
 
@@ -12,9 +12,15 @@
 
 @interface UAClass : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * id;
-@property (nonatomic, retain) NSNumber * section;
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * number;
+@property (nonatomic, retain) NSNumber * subject;
+@property (nonatomic, retain) NSString * available;
+@property (nonatomic, retain) NSNumber * credits;
+@property (nonatomic, retain) NSString * desc;
+@property (nonatomic, retain) NSArray * tags;
+@property (nonatomic, retain) NSDictionary * prerequisites;
+@property (nonatomic, retain) NSDictionary * alternatives;
 
 @end
