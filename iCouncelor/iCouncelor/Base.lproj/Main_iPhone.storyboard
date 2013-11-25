@@ -53,7 +53,6 @@
         <!--IC Navigation Controller - Item-->
         <scene sceneID="cUi-kZ-frf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
                 <navigationController id="rS3-R9-Ivy" customClass="iCNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="8le-wc-QLz"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
@@ -63,6 +62,7 @@
                         <segue destination="pGg-6v-bdr" kind="relationship" relationship="rootViewController" id="RxB-wf-QIq"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-375" y="684"/>
         </scene>

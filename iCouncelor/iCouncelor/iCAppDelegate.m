@@ -68,42 +68,65 @@
     NSDictionary *classData = [allData valueForKey:@"courses"];
     
     NSLog(@"classData contains %i dictionaries.", [classData count]);
-    for (NSDictionary *eachClassRaw in classData) {
+    
+    
+    if ([classData count] > 0){
+    
+        /* Delete all objects before re-adding them */
         
-        UAClass *class =[NSEntityDescription insertNewObjectForEntityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext ];
+        NSFetchRequest * allCars = [[NSFetchRequest alloc] init];
+        [allCars setEntity:[NSEntityDescription entityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext]];
+        [allCars setIncludesPropertyValues:NO]; //only fetch the managedObjectID
         
+        NSError * error = nil;
+        NSArray * allClasses = [self.managedObjectContext executeFetchRequest:allCars error:&error];
+        //error handling goes here
+        for (UAClass * class in allClasses) {
+            [self.managedObjectContext deleteObject:class];
+        }
         
+        /* Re add the new ones */
         
-        //... repeat for all attributes
-        //[plantMO setValue:gardenManObj forKey:@"gardent"];
-        
-        /*
-         subject
-         number
-         available
-         name
-         credits
-         description
-         tags
-         prerequisites
-         alternatives
-         */
-        
-        class.subject = [eachClassRaw valueForKey:@"subject"];
-        class.number = [eachClassRaw valueForKey:@"number"];
-        class.available = [eachClassRaw valueForKey:@"available"];
-        class.name = [eachClassRaw valueForKey:@"name"];
-        class.credits = [eachClassRaw valueForKey:@"credits"];
-        class.desc = [eachClassRaw valueForKey:@"description"];
-        //class.tags = [eachClassRaw valueForKey:@"tags"];
-        //class.prerequisites = [eachClassRaw valueForKey:@"prerequisites"];
-        //class.alternatives = [eachClassRaw valueForKey:@"alternatives"];
-        
-        NSLog(@"Got %@ as a name.", class.name);
-        
+        for (NSDictionary *eachClassRaw in classData) {
+            
+            UAClass *class =[NSEntityDescription insertNewObjectForEntityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext ];
+            
+            
+            
+            //... repeat for all attributes
+            //[plantMO setValue:gardenManObj forKey:@"gardent"];
+            
+            /*
+             subject
+             number
+             available
+             name
+             credits
+             description
+             tags
+             prerequisites
+             alternatives
+             */
+            
+            NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+            [f setNumberStyle:NSNumberFormatterDecimalStyle];
+            
+            class.subject = [f numberFromString:[eachClassRaw valueForKey:@"subject"]];
+            class.number = [f numberFromString:[eachClassRaw valueForKey:@"number"]];
+            class.available = [eachClassRaw valueForKey:@"available"];
+            class.name = [eachClassRaw valueForKey:@"name"];
+            class.credits = [eachClassRaw valueForKey:@"credits"];
+            class.desc = [eachClassRaw valueForKey:@"description"];
+            class.tags = [eachClassRaw valueForKey:@"tags"];
+            class.prerequisites = [eachClassRaw valueForKey:@"prerequisites"];
+            class.alternatives = [eachClassRaw valueForKey:@"alternatives"];
+            
+            NSLog(@"Got %@ as a name.", class.name);
+            
+            
+        }
         
     }
-    
     
 }
 
