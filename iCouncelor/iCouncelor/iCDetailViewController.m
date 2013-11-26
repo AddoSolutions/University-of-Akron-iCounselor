@@ -31,10 +31,15 @@
     }        
 }
 
+// This is included so that the description label will scale to fit the text it contains
+- (void) viewDidLayoutSubviews {
+    [self.classDescription sizeToFit];
+}
+
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
+    
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
         
@@ -44,7 +49,7 @@
         self.classSubject.text = @"3460";
         self.classNumber.text = @"489";
         self.classCredits.text = @"3";
-        self.classDescription.text = @"Dr. Collard is the best professor ever!";
+        self.classDescription.text = @"Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever!";
     }
 }
 
