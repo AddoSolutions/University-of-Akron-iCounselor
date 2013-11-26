@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7273536918453EE000E3BF34 /* graph_bar_trend.png in Resources */ = {isa = PBXBuildFile; fileRef = 7273536818453EE000E3BF34 /* graph_bar_trend.png */; };
+		7273536B18453F1E00E3BF34 /* magnifying_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 7273536A18453F1E00E3BF34 /* magnifying_glass.png */; };
 		B9CC68471843EDAA00D125EF /* UAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC68461843EDAA00D125EF /* UAClass.m */; };
 		B9D08DC8183FFEC5009142EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC7183FFEC5009142EB /* Foundation.framework */; };
 		B9D08DCA183FFEC5009142EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7273536818453EE000E3BF34 /* graph_bar_trend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph_bar_trend.png; path = "../../../../Downloads/app-bits_free_tabbar_icons/standard/graph_bar_trend.png"; sourceTree = "<group>"; };
+		7273536A18453F1E00E3BF34 /* magnifying_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magnifying_glass.png; path = "../../../../Downloads/app-bits_free_tabbar_icons/standard/magnifying_glass.png"; sourceTree = "<group>"; };
 		B9CC68451843EDAA00D125EF /* UAClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAClass.h; sourceTree = "<group>"; };
 		B9CC68461843EDAA00D125EF /* UAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAClass.m; sourceTree = "<group>"; };
 		B9D08DC4183FFEC5009142EB /* iCouncelor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCouncelor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +170,8 @@
 		B9D08DD0183FFEC5009142EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7273536A18453F1E00E3BF34 /* magnifying_glass.png */,
+				7273536818453EE000E3BF34 /* graph_bar_trend.png */,
 				B9D08E561840096D009142EB /* iCBaseClass.h */,
 				B9D08E571840096D009142EB /* iCBaseClass.m */,
 				B9D08DD1183FFEC5009142EB /* iCouncelor-Info.plist */,
@@ -275,9 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D08DE0183FFEC5009142EB /* Main_iPad.storyboard in Resources */,
+				7273536918453EE000E3BF34 /* graph_bar_trend.png in Resources */,
 				B9D08DEB183FFEC5009142EB /* Images.xcassets in Resources */,
 				B9D08DDD183FFEC5009142EB /* Main_iPhone.storyboard in Resources */,
 				B9D08DD4183FFEC5009142EB /* InfoPlist.strings in Resources */,
+				7273536B18453F1E00E3BF34 /* magnifying_glass.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

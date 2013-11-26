@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--IC Overview View Controller - Item 1-->
+        <!--IC Overview View Controller - Progress-->
         <scene sceneID="heZ-0N-U5y">
             <objects>
                 <viewController id="pHE-5j-cOm" customClass="iCOverviewViewController" sceneMemberID="viewController">
@@ -25,7 +25,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="cAh-SJ-YD7"/>
+                    <tabBarItem key="tabBarItem" title="Progress" image="graph_bar_trend.png" id="cAh-SJ-YD7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyU-zc-h63" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,11 +50,11 @@
             </objects>
             <point key="canvasLocation" x="-917" y="357"/>
         </scene>
-        <!--IC Navigation Controller - Item-->
+        <!--IC Navigation Controller - Class List-->
         <scene sceneID="cUi-kZ-frf">
             <objects>
                 <navigationController id="rS3-R9-Ivy" customClass="iCNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8le-wc-QLz"/>
+                    <tabBarItem key="tabBarItem" title="Class List" image="magnifying_glass.png" id="8le-wc-QLz"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -211,6 +211,10 @@
             <point key="canvasLocation" x="528" y="684"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="graph_bar_trend.png" width="26" height="26"/>
+        <image name="magnifying_glass.png" width="26" height="26"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
