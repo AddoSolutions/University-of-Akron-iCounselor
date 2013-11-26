@@ -242,6 +242,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Nick Artman";
 				TargetAttributes = {
+					B9D08DC3183FFEC5009142EB = {
+						DevelopmentTeam = 3FT8PS6NT6;
+					};
 					B9D08DEF183FFEC5009142EB = {
 						TestTargetID = B9D08DC3183FFEC5009142EB;
 					};
@@ -439,10 +442,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
 				INFOPLIST_FILE = "iCouncelor/iCouncelor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -452,10 +458,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
 				INFOPLIST_FILE = "iCouncelor/iCouncelor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
