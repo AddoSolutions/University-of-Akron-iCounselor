@@ -82,6 +82,7 @@
 		B9D08E571840096D009142EB /* iCBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCBaseClass.m; sourceTree = "<group>"; };
 		B9D08E5918400D44009142EB /* iCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCNavigationController.h; sourceTree = "<group>"; };
 		B9D08E5A18400D44009142EB /* iCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCNavigationController.m; sourceTree = "<group>"; };
+		D372E605184D23E700A78A47 /* iCouncelor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iCouncelor.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +145,7 @@
 		B9D08DCF183FFEC5009142EB /* iCouncelor */ = {
 			isa = PBXGroup;
 			children = (
+				D372E605184D23E700A78A47 /* iCouncelor.entitlements */,
 				B9D08DDB183FFEC5009142EB /* Main_iPhone.storyboard */,
 				B9D08DDE183FFEC5009142EB /* Main_iPad.storyboard */,
 				B9D08DD8183FFEC5009142EB /* iCAppDelegate.h */,
@@ -250,6 +252,11 @@
 				TargetAttributes = {
 					B9D08DC3183FFEC5009142EB = {
 						DevelopmentTeam = 3FT8PS6NT6;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					B9D08DEF183FFEC5009142EB = {
 						TestTargetID = B9D08DC3183FFEC5009142EB;
@@ -450,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = iCouncelor/iCouncelor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -466,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = iCouncelor/iCouncelor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

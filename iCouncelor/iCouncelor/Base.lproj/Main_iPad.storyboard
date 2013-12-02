@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="bzZ-ky-63q">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -57,10 +57,11 @@
             </objects>
             <point key="canvasLocation" x="448" y="248"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Split View Controller - Item-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
                 <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="iAF-s2-8bP"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -129,7 +130,80 @@
             </objects>
             <point key="canvasLocation" x="-366" y="248"/>
         </scene>
+        <!--First View Controller - First-->
+        <scene sceneID="utI-uf-ovg">
+            <objects>
+                <viewController id="U1t-4e-rPC" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5vw-aO-fJ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZSV-sg-lSJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ByD-k2-VrK">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kBK-hE-fAr">
+                                <rect key="frame" x="20" y="250" width="728" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the First View Controller — an instance of FirstViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S8D-wK-Qdu">
+                                <rect key="frame" x="250" y="350" width="268" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="CLF-bo-OHM"/>
+                                    <constraint firstAttribute="height" constant="70" id="HgT-IQ-FKu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMc-n6-9dn">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <items/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sMc-n6-9dn" firstAttribute="leading" secondItem="ByD-k2-VrK" secondAttribute="leading" id="2iW-2P-3Ug"/>
+                            <constraint firstItem="S8D-wK-Qdu" firstAttribute="centerX" secondItem="kBK-hE-fAr" secondAttribute="centerX" id="7V3-SE-Sox"/>
+                            <constraint firstItem="kBK-hE-fAr" firstAttribute="top" secondItem="ByD-k2-VrK" secondAttribute="top" constant="250" id="8iy-Wd-xAH"/>
+                            <constraint firstItem="sMc-n6-9dn" firstAttribute="top" secondItem="ByD-k2-VrK" secondAttribute="top" id="ddj-Yy-rOZ"/>
+                            <constraint firstItem="S8D-wK-Qdu" firstAttribute="top" secondItem="ByD-k2-VrK" secondAttribute="top" constant="350" id="eZb-dT-g7Z"/>
+                            <constraint firstItem="sMc-n6-9dn" firstAttribute="trailing" secondItem="ByD-k2-VrK" secondAttribute="trailing" id="ey2-yV-GBB"/>
+                            <constraint firstItem="kBK-hE-fAr" firstAttribute="leading" secondItem="ByD-k2-VrK" secondAttribute="leading" constant="20" symbolic="YES" id="lJ7-yL-VAa"/>
+                            <constraint firstAttribute="trailing" secondItem="kBK-hE-fAr" secondAttribute="trailing" constant="20" symbolic="YES" id="xy4-1W-dSZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="aVv-Mb-fu7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhi-Bo-RIx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686" y="-1786"/>
+        </scene>
+        <!--Root Tab Bar Controller-->
+        <scene sceneID="OUp-AO-npq">
+            <objects>
+                <tabBarController id="bzZ-ky-63q" customClass="RootTabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="d6g-cW-gUK">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="U1t-4e-rPC" kind="relationship" relationship="viewControllers" id="shi-le-VMJ"/>
+                        <segue destination="H1p-Uh-vWS" kind="relationship" relationship="viewControllers" id="aFY-Mc-2om"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPs-n2-hba" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1704" y="-1218"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="first" width="16" height="16"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>

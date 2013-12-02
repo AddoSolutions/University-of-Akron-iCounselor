@@ -20,12 +20,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
     
-    iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
-    [controller setManagedObjectContext:self.managedObjectContext];
-    
-    for (id vc in controller.viewControllers) {
-        [vc setManagedObjectContext:self.managedObjectContext];
+        NSLog(@"The app did finish loading.");
+        
+        UISplitViewController *controller = (UISplitViewController*) self.window.rootViewController;
+//        [controller set setViewControllers:self.managedObjectContext];
+        
+        for (id vc in controller.viewControllers) {
+            [vc setManagedObjectContext:self.managedObjectContext];
+        }
+//        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+//        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+//        splitViewController.delegate = (id)navigationController.topViewController;
+        
+//        UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
+//        iC2MasterViewController *controller = (iC2MasterViewController *)masterNavigationController.topViewController;
+//        controller.managedObjectContext = self.managedObjectContext;
+    } else {
+        iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
+        [controller setManagedObjectContext:self.managedObjectContext];
+        
+        for (id vc in controller.viewControllers) {
+            [vc setManagedObjectContext:self.managedObjectContext];
+        }
     }
     
     
