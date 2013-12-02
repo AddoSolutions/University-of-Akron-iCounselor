@@ -24,6 +24,17 @@
     
         NSLog(@"The app did finish loading.");
         
+        iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
+        [controller setManagedObjectContext:self.managedObjectContext];
+        
+        /* Uncommenting this crashes the iPad simulator.
+        
+        for (id vc in controller.viewControllers) {
+            [vc setManagedObjectContext:self.managedObjectContext];
+        }
+        
+        */
+        
 //        UISplitViewController *controller = (UISplitViewController*) self.window.rootViewController;
 ////        [controller set setViewControllers:self.managedObjectContext];
 //        

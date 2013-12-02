@@ -33,6 +33,7 @@
 		B9D08E541840074A009142EB /* iCRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E531840074A009142EB /* iCRootTabBarController.m */; };
 		B9D08E581840096D009142EB /* iCBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E571840096D009142EB /* iCBaseClass.m */; };
 		B9D08E5B18400D44009142EB /* iCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D08E5A18400D44009142EB /* iCNavigationController.m */; };
+		D372E69C184D343900A78A47 /* iCSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D372E69B184D343900A78A47 /* iCSplitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		B9D08E5918400D44009142EB /* iCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCNavigationController.h; sourceTree = "<group>"; };
 		B9D08E5A18400D44009142EB /* iCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCNavigationController.m; sourceTree = "<group>"; };
 		D372E605184D23E700A78A47 /* iCouncelor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iCouncelor.entitlements; sourceTree = "<group>"; };
+		D372E69A184D343900A78A47 /* iCSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCSplitViewController.h; sourceTree = "<group>"; };
+		D372E69B184D343900A78A47 /* iCSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCSplitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				B9D08DE1183FFEC5009142EB /* iCouncelor.xcdatamodeld */,
 				B9CC68451843EDAA00D125EF /* UAClass.h */,
 				B9CC68461843EDAA00D125EF /* UAClass.m */,
+				D372E69A184D343900A78A47 /* iCSplitViewController.h */,
+				D372E69B184D343900A78A47 /* iCSplitViewController.m */,
 				B9D08DD0183FFEC5009142EB /* Supporting Files */,
 			);
 			path = iCouncelor;
@@ -321,6 +326,7 @@
 				B9D08DD6183FFEC5009142EB /* main.m in Sources */,
 				B9CC68471843EDAA00D125EF /* UAClass.m in Sources */,
 				B9D08DE9183FFEC5009142EB /* iCDetailViewController.m in Sources */,
+				D372E69C184D343900A78A47 /* iCSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
