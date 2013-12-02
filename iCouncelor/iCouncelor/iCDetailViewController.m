@@ -49,7 +49,7 @@
         self.classSubject.text = @"3460";
         self.classNumber.text = @"489";
         self.classCredits.text = @"3";
-        self.classDescription.text = @"Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever!";
+        self.classDescription.text = @"Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Yup, he sure is the best.";
     }
 }
 
