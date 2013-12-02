@@ -10,6 +10,8 @@
 
 #import "iCMasterViewController.h"
 #import "iCRootTabBarController.h"
+#import "iCSplitViewController.h"
+#import "iCNavigationController.h"
 #import "UAClass.h"
 
 @implementation iCAppDelegate
@@ -24,19 +26,28 @@
     
         NSLog(@"The app did finish loading.");
         
-//        UISplitViewController *controller = (UISplitViewController*) self.window.rootViewController;
-////        [controller set setViewControllers:self.managedObjectContext];
-//        
-//        for (id vc in controller.viewControllers) {
-//            [vc setManagedObjectContext:self.managedObjectContext];
-//        }
-//        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-//        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-//        splitViewController.delegate = (id)navigationController.topViewController;
+        iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
         
-//        UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
-//        iC2MasterViewController *controller = (iC2MasterViewController *)masterNavigationController.topViewController;
-//        controller.managedObjectContext = self.managedObjectContext;
+        // I believe the problem is in the next few lines.
+        
+        [controller setManagedObjectContext:self.managedObjectContext];
+        
+        iCSplitViewController *splitViewController = [controller.viewControllers lastObject];
+        iCNavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        splitViewController.delegate = (id)navigationController.topViewController;
+        
+        iCNavigationController *masterNavigationController = splitViewController.viewControllers[0];
+        iCMasterViewController *controller2 = (iCMasterViewController*)masterNavigationController.topViewController;
+        controller2.managedObjectContext = self.managedObjectContext;
+        
+        /* Uncommenting this crashes the iPad simulator.
+        
+        for (id vc in controller.viewControllers) {
+            [vc setManagedObjectContext:self.managedObjectContext];
+        }
+        
+        */
+        
     } else {
         iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
         [controller setManagedObjectContext:self.managedObjectContext];
