@@ -44,12 +44,12 @@
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"name"] description];
         
         // TODO assign fields of detail view based on data in class entity entry
-        self.navigationItem.title = @"MERP";
-        self.className.text = @"iOS Development";
-        self.classSubject.text = @"3460";
-        self.classNumber.text = @"489";
-        self.classCredits.text = @"3";
-        self.classDescription.text = @"Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Dr. Collard is the best professor ever! Everybody should take him for every single class they ever have to take. Ever! And I'll repeat this until everybody knows it! Yup, he sure is the best.";
+        self.navigationItem.title = [[self.detailItem valueForKey:@"name"] description];
+        self.className.text = [[self.detailItem valueForKey:@"name"] description];
+        self.classSubject.text = [[self.detailItem valueForKey:@"subject"] description];
+        self.classNumber.text = [[self.detailItem valueForKey:@"number"] description];
+        self.classCredits.text = [[self.detailItem valueForKey:@"credits"] description];
+        self.classDescription.text = [[self.detailItem valueForKey:@"desc"] description];
     }
 }
 
