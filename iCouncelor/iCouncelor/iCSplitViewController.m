@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Nick Artman. All rights reserved.
 //
 
+#import "iCNavigationController.h"
 #import "iCSplitViewController.h"
 
 @interface iCSplitViewController ()
@@ -23,10 +24,12 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+
+- (void)viewWillAppear:(BOOL)animated{
+    
+    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning

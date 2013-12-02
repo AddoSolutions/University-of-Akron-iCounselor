@@ -163,12 +163,12 @@
 				B9D08DE5183FFEC5009142EB /* iCMasterViewController.m */,
 				B9D08DE7183FFEC5009142EB /* iCDetailViewController.h */,
 				B9D08DE8183FFEC5009142EB /* iCDetailViewController.m */,
+				D372E69A184D343900A78A47 /* iCSplitViewController.h */,
+				D372E69B184D343900A78A47 /* iCSplitViewController.m */,
 				B9D08DEA183FFEC5009142EB /* Images.xcassets */,
 				B9D08DE1183FFEC5009142EB /* iCouncelor.xcdatamodeld */,
 				B9CC68451843EDAA00D125EF /* UAClass.h */,
 				B9CC68461843EDAA00D125EF /* UAClass.m */,
-				D372E69A184D343900A78A47 /* iCSplitViewController.h */,
-				D372E69B184D343900A78A47 /* iCSplitViewController.m */,
 				B9D08DD0183FFEC5009142EB /* Supporting Files */,
 			);
 			path = iCouncelor;
@@ -258,6 +258,9 @@
 					B9D08DC3183FFEC5009142EB = {
 						DevelopmentTeam = 3FT8PS6NT6;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};

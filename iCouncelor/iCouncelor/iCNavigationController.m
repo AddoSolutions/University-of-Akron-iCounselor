@@ -15,9 +15,14 @@
 - (void)viewDidLoad{
     
     NSArray *viewControllers = self.viewControllers;
-    iCMasterViewController *controller = [viewControllers objectAtIndex:viewControllers.count - 1];
     
-    controller.managedObjectContext = self.managedObjectContext;
+    for (iCMasterViewController *controller in viewControllers){
+        if ([controller class] == [iCMasterViewController class]){
+            controller.managedObjectContext = self.managedObjectContext;
+        }
+    }
+    
+    [super viewDidLoad];
     
 }
 

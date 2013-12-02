@@ -10,9 +10,9 @@
 
 #import "iCMasterViewController.h"
 #import "iCRootTabBarController.h"
+#import "UAClass.h"
 #import "iCSplitViewController.h"
 #import "iCNavigationController.h"
-#import "UAClass.h"
 
 @implementation iCAppDelegate
 
@@ -22,41 +22,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
     
-        NSLog(@"The app did finish loading.");
+    iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
+    [controller setManagedObjectContext:self.managedObjectContext];
+    
+    NSArray *controllers = controller.viewControllers;
+    
+    for (id vc in controllers) {
+        [vc setManagedObjectContext:self.managedObjectContext];
         
-        iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
-        
-        // I believe the problem is in the next few lines.
-        
-        [controller setManagedObjectContext:self.managedObjectContext];
-        
-        iCSplitViewController *splitViewController = [controller.viewControllers lastObject];
-        iCNavigationController *navigationController = [splitViewController.viewControllers lastObject];
-        splitViewController.delegate = (id)navigationController.topViewController;
-        
-        iCNavigationController *masterNavigationController = splitViewController.viewControllers[0];
-        iCMasterViewController *controller2 = (iCMasterViewController*)masterNavigationController.topViewController;
-        controller2.managedObjectContext = self.managedObjectContext;
-        
-        /* Uncommenting this crashes the iPad simulator.
-        
-        for (id vc in controller.viewControllers) {
-            [vc setManagedObjectContext:self.managedObjectContext];
-        }
-        
-        */
-        
-    } else {
-        iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
-        [controller setManagedObjectContext:self.managedObjectContext];
-        
-        for (id vc in controller.viewControllers) {
-            [vc setManagedObjectContext:self.managedObjectContext];
+        if ([vc class] == [iCSplitViewController class]){
+            iCSplitViewController *splitter = vc;
+            
+            
+            NSArray *viewControllers = splitter.viewControllers;
+            
+            for (iCNavigationController *controller in viewControllers){
+                if ([controller class] == [iCNavigationController class]){
+                    controller.managedObjectContext = self.managedObjectContext;
+                }
+            }
+            
         }
     }
-    
     
     
     

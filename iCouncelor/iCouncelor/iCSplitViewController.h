@@ -10,4 +10,6 @@
 
 @interface iCSplitViewController : UISplitViewController
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @end
