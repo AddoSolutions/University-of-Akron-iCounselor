@@ -24,12 +24,12 @@
     
         NSLog(@"The app did finish loading.");
         
-        UISplitViewController *controller = (UISplitViewController*) self.window.rootViewController;
-//        [controller set setViewControllers:self.managedObjectContext];
-        
-        for (id vc in controller.viewControllers) {
-            [vc setManagedObjectContext:self.managedObjectContext];
-        }
+//        UISplitViewController *controller = (UISplitViewController*) self.window.rootViewController;
+////        [controller set setViewControllers:self.managedObjectContext];
+//        
+//        for (id vc in controller.viewControllers) {
+//            [vc setManagedObjectContext:self.managedObjectContext];
+//        }
 //        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
 //        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
 //        splitViewController.delegate = (id)navigationController.topViewController;
