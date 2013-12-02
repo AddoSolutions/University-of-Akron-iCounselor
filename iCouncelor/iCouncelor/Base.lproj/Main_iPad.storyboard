@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--IC Navigation Controller-->
         <scene sceneID="pY4-Hu-kfo">
             <objects>
-                <navigationController id="RMx-3f-FxP" sceneMemberID="viewController">
+                <navigationController id="RMx-3f-FxP" customClass="iCNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="859" y="-631"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--IC Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
             <objects>
-                <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
+                <navigationController id="vC3-pB-5Vb" customClass="iCNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="-366" y="248"/>
         </scene>
-        <!--First View Controller - First-->
+        <!--IC Overview View Controller - First-->
         <scene sceneID="utI-uf-ovg">
             <objects>
-                <viewController id="U1t-4e-rPC" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="U1t-4e-rPC" customClass="iCOverviewViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5vw-aO-fJ2"/>
                         <viewControllerLayoutGuide type="bottom" id="ZSV-sg-lSJ"/>
@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="-686" y="-1786"/>
         </scene>
-        <!--Root Tab Bar Controller-->
+        <!--IC Root Tab Bar Controller-->
         <scene sceneID="OUp-AO-npq">
             <objects>
-                <tabBarController id="bzZ-ky-63q" customClass="RootTabBarController" sceneMemberID="viewController">
+                <tabBarController id="bzZ-ky-63q" customClass="iCRootTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="d6g-cW-gUK">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
