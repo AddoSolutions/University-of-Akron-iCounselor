@@ -43,7 +43,6 @@
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"name"] description];
         
-        // TODO assign fields of detail view based on data in class entity entry
         self.navigationItem.title = [[self.detailItem valueForKey:@"name"] description];
         self.className.text = [[self.detailItem valueForKey:@"name"] description];
         self.classSubject.text = [[self.detailItem valueForKey:@"subject"] description];
