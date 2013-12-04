@@ -112,11 +112,11 @@
             </objects>
             <point key="canvasLocation" x="448" y="248"/>
         </scene>
-        <!--IC Split View Controller - Item-->
+        <!--IC Split View Controller - Class List-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
                 <splitViewController id="H1p-Uh-vWS" customClass="iCSplitViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iAF-s2-8bP"/>
+                    <tabBarItem key="tabBarItem" title="Class List" image="magnifying_glass.png" id="iAF-s2-8bP"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -185,7 +185,7 @@
             </objects>
             <point key="canvasLocation" x="-366" y="248"/>
         </scene>
-        <!--IC Overview View Controller - First-->
+        <!--IC Overview View Controller - Progress-->
         <scene sceneID="utI-uf-ovg">
             <objects>
                 <viewController id="U1t-4e-rPC" customClass="iCOverviewViewController" sceneMemberID="viewController">
@@ -197,7 +197,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kBK-hE-fAr">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Progress Report" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kBK-hE-fAr">
                                 <rect key="frame" x="20" y="250" width="728" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
@@ -230,7 +230,7 @@
                             <constraint firstAttribute="trailing" secondItem="kBK-hE-fAr" secondAttribute="trailing" constant="20" symbolic="YES" id="xy4-1W-dSZ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="aVv-Mb-fu7"/>
+                    <tabBarItem key="tabBarItem" title="Progress" image="graph_bar_trend.png" id="aVv-Mb-fu7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zhi-Bo-RIx" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,7 +257,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
+        <image name="graph_bar_trend.png" width="26" height="26"/>
+        <image name="magnifying_glass.png" width="26" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
