@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iCloud/iCloud.h>
 
-@interface iCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface iCAppDelegate : UIResponder <UIApplicationDelegate, iCloudDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
