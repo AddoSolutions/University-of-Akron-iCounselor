@@ -261,6 +261,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 0;
 							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -469,6 +472,10 @@
 				CODE_SIGN_ENTITLEMENTS = iCouncelor/iCouncelor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Nitrx/Sites/local.ua-icounselor/iCouncelor",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
 				INFOPLIST_FILE = "iCouncelor/iCouncelor-Info.plist";
@@ -486,6 +493,10 @@
 				CODE_SIGN_ENTITLEMENTS = iCouncelor/iCouncelor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Nitrx/Sites/local.ua-icounselor/iCouncelor",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
 				INFOPLIST_FILE = "iCouncelor/iCouncelor-Info.plist";
