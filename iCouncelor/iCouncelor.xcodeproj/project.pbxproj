@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		721C7F35184D1BE000FC4B7D /* graph_bar_trend.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C7F33184D1BE000FC4B7D /* graph_bar_trend.png */; };
 		721C7F36184D1BE000FC4B7D /* magnifying_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C7F34184D1BE000FC4B7D /* magnifying_glass.png */; };
-		B9A9B54D184FCB8B0070D063 /* iCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A9B54C184FCB8B0070D063 /* iCloud.framework */; };
 		B9CC68471843EDAA00D125EF /* UAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC68461843EDAA00D125EF /* UAClass.m */; };
 		B9D08DC8183FFEC5009142EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC7183FFEC5009142EB /* Foundation.framework */; };
 		B9D08DCA183FFEC5009142EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */; };
@@ -50,7 +49,6 @@
 /* Begin PBXFileReference section */
 		721C7F33184D1BE000FC4B7D /* graph_bar_trend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph_bar_trend.png; sourceTree = "<group>"; };
 		721C7F34184D1BE000FC4B7D /* magnifying_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnifying_glass.png; sourceTree = "<group>"; };
-		B9A9B54C184FCB8B0070D063 /* iCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iCloud.framework; sourceTree = "<group>"; };
 		B9CC68451843EDAA00D125EF /* UAClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAClass.h; sourceTree = "<group>"; };
 		B9CC68461843EDAA00D125EF /* UAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAClass.m; sourceTree = "<group>"; };
 		B9D08DC4183FFEC5009142EB /* iCouncelor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCouncelor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +95,6 @@
 			files = (
 				B9D08DCA183FFEC5009142EB /* CoreGraphics.framework in Frameworks */,
 				B9D08DCE183FFEC5009142EB /* CoreData.framework in Frameworks */,
-				B9A9B54D184FCB8B0070D063 /* iCloud.framework in Frameworks */,
 				B9D08DCC183FFEC5009142EB /* UIKit.framework in Frameworks */,
 				B9D08DC8183FFEC5009142EB /* Foundation.framework in Frameworks */,
 			);
@@ -139,7 +136,6 @@
 		B9D08DC6183FFEC5009142EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9A9B54C184FCB8B0070D063 /* iCloud.framework */,
 				B9D08DC7183FFEC5009142EB /* Foundation.framework */,
 				B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */,
 				B9D08DCB183FFEC5009142EB /* UIKit.framework */,
@@ -473,10 +469,6 @@
 				CODE_SIGN_ENTITLEMENTS = iCouncelor/iCouncelor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/Nitrx/Sites/local.ua-icounselor/iCouncelor",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
 				INFOPLIST_FILE = "iCouncelor/iCouncelor-Info.plist";
@@ -494,10 +486,6 @@
 				CODE_SIGN_ENTITLEMENTS = iCouncelor/iCouncelor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/Nitrx/Sites/local.ua-icounselor/iCouncelor",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iCouncelor/iCouncelor-Prefix.pch";
 				INFOPLIST_FILE = "iCouncelor/iCouncelor-Info.plist";
