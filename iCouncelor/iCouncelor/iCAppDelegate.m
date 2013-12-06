@@ -46,10 +46,6 @@
         }
     }
     
-    [[iCloud sharedCloud] setDelegate:self]; // Set this if you plan to use the delegate
-    [[iCloud sharedCloud] setVerboseLogging:YES]; // We want detailed feedback about what's going on with iCloud, this is OFF by default
-    [[iCloud sharedCloud] updateFiles]; // Force iCloud Update: This is done automatically when changes are made, but we want to make sure the view is always updated when presented
-    
     
     return YES;
     

@@ -4,10 +4,6 @@
         <attribute name="timeStamp" optional="YES" attributeType="Date">
             <userInfo/>
         </attribute>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" syncable="YES"/>
-        <relationship name="relationship1" optional="YES" maxCount="1" deletionRule="Nullify" syncable="YES"/>
-        <relationship name="relationship2" optional="YES" maxCount="1" deletionRule="Nullify" syncable="YES"/>
-        <relationship name="relationship3" optional="YES" maxCount="1" deletionRule="Nullify" syncable="YES"/>
         <userInfo/>
     </entity>
     <entity name="UAClass" representedClassName="Class" syncable="YES">
