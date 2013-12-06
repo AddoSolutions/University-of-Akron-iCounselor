@@ -6,7 +6,5 @@
 	<array>
 		<string>$(TeamIdentifierPrefix)edu.uakron.cs.iCouncelor</string>
 	</array>
-	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
-	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 </dict>
 </plist>

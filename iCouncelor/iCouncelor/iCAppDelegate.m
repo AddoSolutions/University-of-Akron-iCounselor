@@ -47,6 +47,7 @@
     }
     
     
+    
     return YES;
     
 }
@@ -98,36 +99,12 @@
         NSArray * allClasses = [self.managedObjectContext executeFetchRequest:allCars error:&error];
         //error handling goes here
         for (UAClass * class in allClasses) {
-            
-            /*
-             
-             Check if the class is NOT in the pList and has NOT been taken
-             
-             found = false;
-             
-             for (plist data){
-                if matches, found=true
-             }
-             
-             if (!found) deleteObject;
-             
-             */
-            
             [self.managedObjectContext deleteObject:class];
         }
         
         /* Re add the new ones */
         
         for (NSDictionary *eachClassRaw in classData) {
-            
-            
-            /*
-             
-             Check id class exists in DB, if so, load it and edit it, otherwise make one.
-             
-             
-             
-             */
             
             UAClass *class =[NSEntityDescription insertNewObjectForEntityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext ];
             

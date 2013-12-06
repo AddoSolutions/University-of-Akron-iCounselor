@@ -18,18 +18,8 @@
         <attribute name="subject" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="tags" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
-    <entity name="UAClassCart" syncable="YES">
-        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="chosenClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UAClass" syncable="YES"/>
-    </entity>
-    <entity name="UAClassesTaken" syncable="YES">
-        <attribute name="pressed" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="classChosen" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UAClass" syncable="YES"/>
-    </entity>
     <elements>
         <element name="Event" positionX="0" positionY="0" width="0" height="0"/>
         <element name="UAClass" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="UAClassCart" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="UAClassesTaken" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>
