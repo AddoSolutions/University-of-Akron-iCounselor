@@ -31,15 +31,9 @@
     }        
 }
 
-// This is included so that the description label will scale to fit the text it contains,
-// and the UIScrollView containing it will size to fit the text
+// This is included so that the description label will scale to fit the text it contains
 - (void) viewDidLayoutSubviews {
     [self.classDescription sizeToFit];
-    float sizeOfContent = 0;
-    NSInteger wd = self.classDescription.frame.size.width;
-    NSInteger ht = self.classDescription.frame.size.height - 270;
-    sizeOfContent = wd + ht;
-    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, sizeOfContent);
 }
 
 - (void)configureView
