@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		721C7F35184D1BE000FC4B7D /* graph_bar_trend.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C7F33184D1BE000FC4B7D /* graph_bar_trend.png */; };
 		721C7F36184D1BE000FC4B7D /* magnifying_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C7F34184D1BE000FC4B7D /* magnifying_glass.png */; };
-		B97A57DC18525D42002CFCB2 /* ios_development.cer in Resources */ = {isa = PBXBuildFile; fileRef = B97A57DB18525D42002CFCB2 /* ios_development.cer */; };
 		B9CC68471843EDAA00D125EF /* UAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC68461843EDAA00D125EF /* UAClass.m */; };
 		B9D08DC8183FFEC5009142EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC7183FFEC5009142EB /* Foundation.framework */; };
 		B9D08DCA183FFEC5009142EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */; };
@@ -50,7 +49,6 @@
 /* Begin PBXFileReference section */
 		721C7F33184D1BE000FC4B7D /* graph_bar_trend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph_bar_trend.png; sourceTree = "<group>"; };
 		721C7F34184D1BE000FC4B7D /* magnifying_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnifying_glass.png; sourceTree = "<group>"; };
-		B97A57DB18525D42002CFCB2 /* ios_development.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = ios_development.cer; sourceTree = "<group>"; };
 		B9CC68451843EDAA00D125EF /* UAClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAClass.h; sourceTree = "<group>"; };
 		B9CC68461843EDAA00D125EF /* UAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAClass.m; sourceTree = "<group>"; };
 		B9D08DC4183FFEC5009142EB /* iCouncelor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCouncelor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +148,6 @@
 		B9D08DCF183FFEC5009142EB /* iCouncelor */ = {
 			isa = PBXGroup;
 			children = (
-				B97A57DB18525D42002CFCB2 /* ios_development.cer */,
 				D372E605184D23E700A78A47 /* iCouncelor.entitlements */,
 				B9D08DDB183FFEC5009142EB /* Main_iPhone.storyboard */,
 				B9D08DDE183FFEC5009142EB /* Main_iPad.storyboard */,
@@ -264,6 +261,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 0;
 							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -300,7 +300,6 @@
 			files = (
 				B9D08DE0183FFEC5009142EB /* Main_iPad.storyboard in Resources */,
 				721C7F35184D1BE000FC4B7D /* graph_bar_trend.png in Resources */,
-				B97A57DC18525D42002CFCB2 /* ios_development.cer in Resources */,
 				B9D08DEB183FFEC5009142EB /* Images.xcassets in Resources */,
 				B9D08DDD183FFEC5009142EB /* Main_iPhone.storyboard in Resources */,
 				B9D08DD4183FFEC5009142EB /* InfoPlist.strings in Resources */,
