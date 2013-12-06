@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		721C7F35184D1BE000FC4B7D /* graph_bar_trend.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C7F33184D1BE000FC4B7D /* graph_bar_trend.png */; };
 		721C7F36184D1BE000FC4B7D /* magnifying_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C7F34184D1BE000FC4B7D /* magnifying_glass.png */; };
+		72AFD31C1852735F0005A48D /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AFD31B1852735F0005A48D /* UserInfo.m */; };
 		B9CC68471843EDAA00D125EF /* UAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC68461843EDAA00D125EF /* UAClass.m */; };
 		B9D08DC8183FFEC5009142EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC7183FFEC5009142EB /* Foundation.framework */; };
 		B9D08DCA183FFEC5009142EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		721C7F33184D1BE000FC4B7D /* graph_bar_trend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph_bar_trend.png; sourceTree = "<group>"; };
 		721C7F34184D1BE000FC4B7D /* magnifying_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnifying_glass.png; sourceTree = "<group>"; };
+		72AFD31A1852735F0005A48D /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		72AFD31B1852735F0005A48D /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		B9CC68451843EDAA00D125EF /* UAClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAClass.h; sourceTree = "<group>"; };
 		B9CC68461843EDAA00D125EF /* UAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAClass.m; sourceTree = "<group>"; };
 		B9D08DC4183FFEC5009142EB /* iCouncelor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCouncelor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +170,8 @@
 				D372E69B184D343900A78A47 /* iCSplitViewController.m */,
 				B9D08DEA183FFEC5009142EB /* Images.xcassets */,
 				B9D08DE1183FFEC5009142EB /* iCouncelor.xcdatamodeld */,
+				72AFD31A1852735F0005A48D /* UserInfo.h */,
+				72AFD31B1852735F0005A48D /* UserInfo.m */,
 				B9CC68451843EDAA00D125EF /* UAClass.h */,
 				B9CC68461843EDAA00D125EF /* UAClass.m */,
 				B9D08DD0183FFEC5009142EB /* Supporting Files */,
@@ -326,6 +331,7 @@
 				B9D08DE3183FFEC5009142EB /* iCouncelor.xcdatamodeld in Sources */,
 				B9D08E5B18400D44009142EB /* iCNavigationController.m in Sources */,
 				B9D08DDA183FFEC5009142EB /* iCAppDelegate.m in Sources */,
+				72AFD31C1852735F0005A48D /* UserInfo.m in Sources */,
 				B9D08E0A183FFEFB009142EB /* iCOverviewViewController.m in Sources */,
 				B9D08DE6183FFEC5009142EB /* iCMasterViewController.m in Sources */,
 				B9D08E581840096D009142EB /* iCBaseClass.m in Sources */,
