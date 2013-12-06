@@ -226,55 +226,55 @@
                                 <rect key="frame" x="20" y="204" width="728" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credits Taken:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVO-0o-Xm8">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Credits Taken:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVO-0o-Xm8">
                                 <rect key="frame" x="20" y="214" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credits Needed:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntL-zk-LKj">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Credits Needed:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntL-zk-LKj">
                                 <rect key="frame" x="20" y="272" width="125" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9E-He-zBh">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9E-He-zBh">
                                 <rect key="frame" x="20" y="243" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZL-BB-J0w">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZL-BB-J0w">
                                 <rect key="frame" x="20" y="301" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current GPA:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bj-6N-57Y">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current GPA:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bj-6N-57Y">
                                 <rect key="frame" x="20" y="330" width="101" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT4-I6-WK9">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT4-I6-WK9">
                                 <rect key="frame" x="20" y="359" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expected Graduation Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEw-5m-v45">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Expected Graduation Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEw-5m-v45">
                                 <rect key="frame" x="20" y="388" width="209" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tet-6r-FRg">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tet-6r-FRg">
                                 <rect key="frame" x="20" y="417" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhu-8p-2Rt">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhu-8p-2Rt">
                                 <rect key="frame" x="313" y="447" width="143" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Apply for Graduation">
@@ -284,16 +284,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0tk-ew-0Zg" firstAttribute="centerX" secondItem="sMc-n6-9dn" secondAttribute="centerX" id="1Fm-lW-VfD"/>
                             <constraint firstItem="sMc-n6-9dn" firstAttribute="leading" secondItem="ByD-k2-VrK" secondAttribute="leading" id="2iW-2P-3Ug"/>
-                            <constraint firstItem="thC-Zb-EBG" firstAttribute="width" secondItem="7CY-43-rQo" secondAttribute="width" id="4b2-xQ-l1e"/>
-                            <constraint firstItem="Nut-To-FAB" firstAttribute="height" secondItem="7CY-43-rQo" secondAttribute="height" id="6sm-ro-OfX"/>
-                            <constraint firstItem="fhu-8p-2Rt" firstAttribute="width" secondItem="7CY-43-rQo" secondAttribute="width" id="8Q5-FD-xXf"/>
-                            <constraint firstItem="Nut-To-FAB" firstAttribute="centerX" secondItem="7CY-43-rQo" secondAttribute="centerX" id="axi-RC-Fma"/>
+                            <constraint firstItem="thC-Zb-EBG" firstAttribute="leading" secondItem="4bj-6N-57Y" secondAttribute="leading" id="6ub-3s-1Ac"/>
+                            <constraint firstItem="Nut-To-FAB" firstAttribute="centerX" secondItem="sMc-n6-9dn" secondAttribute="centerX" id="8wr-ci-fdq"/>
+                            <constraint firstItem="thC-Zb-EBG" firstAttribute="centerX" secondItem="sMc-n6-9dn" secondAttribute="centerX" id="90V-xw-gOt"/>
+                            <constraint firstItem="thC-Zb-EBG" firstAttribute="leading" secondItem="GT4-I6-WK9" secondAttribute="leading" id="Ktr-6y-h6R"/>
+                            <constraint firstItem="thC-Zb-EBG" firstAttribute="leading" secondItem="R9E-He-zBh" secondAttribute="leading" id="Qs1-nK-0pP"/>
+                            <constraint firstItem="kVO-0o-Xm8" firstAttribute="leading" secondItem="thC-Zb-EBG" secondAttribute="leading" id="Vjb-aH-RKH"/>
+                            <constraint firstItem="thC-Zb-EBG" firstAttribute="leading" secondItem="ntL-zk-LKj" secondAttribute="leading" id="bXT-RO-JDN"/>
+                            <constraint firstItem="thC-Zb-EBG" firstAttribute="leading" secondItem="NZL-BB-J0w" secondAttribute="leading" id="bka-GF-BEk"/>
                             <constraint firstItem="sMc-n6-9dn" firstAttribute="top" secondItem="ByD-k2-VrK" secondAttribute="top" id="ddj-Yy-rOZ"/>
+                            <constraint firstItem="7CY-43-rQo" firstAttribute="centerX" secondItem="sMc-n6-9dn" secondAttribute="centerX" id="es5-R5-2bi"/>
                             <constraint firstItem="sMc-n6-9dn" firstAttribute="trailing" secondItem="ByD-k2-VrK" secondAttribute="trailing" id="ey2-yV-GBB"/>
-                            <constraint firstItem="fhu-8p-2Rt" firstAttribute="centerX" secondItem="7CY-43-rQo" secondAttribute="centerX" constant="0.5" id="vcU-TT-35P"/>
-                            <constraint firstItem="Nut-To-FAB" firstAttribute="centerX" secondItem="0tk-ew-0Zg" secondAttribute="centerX" id="xRf-h5-wM6"/>
-                            <constraint firstItem="Nut-To-FAB" firstAttribute="width" secondItem="0tk-ew-0Zg" secondAttribute="width" id="yXx-JG-kpD"/>
+                            <constraint firstItem="thC-Zb-EBG" firstAttribute="leading" secondItem="Tet-6r-FRg" secondAttribute="leading" id="oFs-0w-Wy6"/>
+                            <constraint firstItem="thC-Zb-EBG" firstAttribute="leading" secondItem="dEw-5m-v45" secondAttribute="leading" id="oc5-0G-Q7p"/>
+                            <constraint firstItem="fhu-8p-2Rt" firstAttribute="centerX" secondItem="sMc-n6-9dn" secondAttribute="centerX" constant="0.5" id="z29-4F-b1H"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Progress" image="graph_bar_trend.png" id="aVv-Mb-fu7"/>
