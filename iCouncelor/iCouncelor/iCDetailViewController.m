@@ -55,6 +55,7 @@
         self.classNumber.text = [[self.detailItem valueForKey:@"number"] description];
         self.classCredits.text = [[self.detailItem valueForKey:@"credits"] description];
         self.classDescription.text = [[self.detailItem valueForKey:@"desc"] description];
+        self.takenSwitch.on = self.detailItem.isTaken;
     }
 }
 
@@ -87,5 +88,16 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
+- (IBAction)toggleClassTaken:(id)sender {
+    if (self.detailItem.isTaken) self.detailItem.isTaken = [NSNumber numberWithBool:NO];
+    else self.detailItem.isTaken = [NSNumber numberWithBool:YES];
+    
+    NSLog(@"Setting isTaken to: %@", self.detailItem.isTaken);
+    
+    
+    NSError *error;
+    [self.managedObjectContext save:&error];
+}
+
 
 @end

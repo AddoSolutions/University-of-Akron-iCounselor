@@ -21,8 +21,8 @@
 @property (nonatomic, retain) NSString * desc;
 @property (nonatomic, retain) NSString * uniqueId;
 @property (nonatomic, retain) NSArray * tags;
-@property (nonatomic, retain) Boolean * isInCart;
-@property (nonatomic, retain) Boolean * isTaken;
+@property (nonatomic, retain) NSNumber * isInCart;
+@property (nonatomic, retain) NSNumber * isTaken;
 @property (nonatomic, retain) NSDictionary * prerequisites;
 @property (nonatomic, retain) NSDictionary * alternatives;
 
