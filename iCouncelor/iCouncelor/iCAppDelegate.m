@@ -23,6 +23,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    
+    
+    NSLog( @"Starting UbiquityStoreManagerExample on device: %@\n\n", [UIDevice currentDevice].name );
+    
+    // STEP 1 - Initialize the UbiquityStoreManager
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"iCouncelor.sqlite"];
+    _ubiquityStoreManager = [[UbiquityStoreManager alloc] initStoreNamed:nil withManagedObjectModel:nil
+                                                           localStoreURL:storeURL containerIdentifier:nil additionalStoreOptions:nil
+                                                                delegate:self];
+    
+    
+    self.ubiquityStoreManager.cloudEnabled = YES;
+
+    
     iCRootTabBarController *controller = (iCRootTabBarController*) self.window.rootViewController;
     [controller setManagedObjectContext:self.managedObjectContext];
     
@@ -46,12 +60,7 @@
         }
     }
     
-    // STEP 1 - Initialize the UbiquityStoreManager
-    /*
-    _ubiquityStoreManager = [[UbiquityStoreManager alloc] initStoreNamed:nil withManagedObjectModel:nil
-                                                           localStoreURL:nil containerIdentifier:nil additionalStoreOptions:nil
-                                                                delegate:self];
-    */
+    [self.ubiquityStoreManager rebuildCloudContentFromCloudStoreOrLocalStore:YES];
     
     return YES;
     
@@ -82,100 +91,6 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    
-    NSURL *url = [NSURL URLWithString:@"http://raw.github.com/AddoSolutions/University-of-Akron-iCounselor/master/remote-plist.plist"];
-    
-    NSDictionary *allData = [[NSDictionary alloc] initWithContentsOfURL:url];
-    
-    NSDictionary *classData = [allData valueForKey:@"courses"];
-    
-    NSLog(@"classData contains %i dictionaries.", [classData count]);
-    
-    
-    if ([classData count] > 0){
-    
-        /* Delete all objects before re-adding them */
-        
-        NSFetchRequest * allClassesQuery = [[NSFetchRequest alloc] init];
-        [allClassesQuery setEntity:[NSEntityDescription entityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext]];
-        [allClassesQuery setIncludesPropertyValues:NO]; //only fetch the managedObjectID
-        
-        NSError * error = nil;
-        NSArray * allClasses = [self.managedObjectContext executeFetchRequest:allClassesQuery error:&error];
-        //error handling goes here
-        for (UAClass * class in allClasses) {
-            
-            /*
-             
-             Check if the class is NOT in the pList and has NOT been taken
-             
-             found = false;
-             
-             for (plist data){
-                if matches, found=true
-             }
-             
-             if (!found) deleteObject;
-             
-             */
-            
-            bool found = false;
-            
-            for (NSDictionary *eachClassRaw in classData) {
-                if( [[self getUniqueIdFromClassPlist:eachClassRaw] isEqualToString:class.uniqueId] ){
-                    found = true;
-                    NSLog(@"Already found: %@", class.uniqueId);
-                    break;
-                }
-            }
-            
-            if (!found){
-                [self.managedObjectContext deleteObject:class];
-                NSLog(@"Deleting: %@", class.uniqueId);
-            }
-        }
-        
-        /* Re add the new ones */
-        
-        for (NSDictionary *eachClassRaw in classData) {
-            
-             
-            // Check id class exists in DB, if so, load it and edit it, otherwise make one.
-            
-            NSString *uniqueId = [self getUniqueIdFromClassPlist:eachClassRaw];
-            
-            UAClass *class = [self getClassFromUniqueId:uniqueId];
-            
-            if (class == nil){
-                class = [NSEntityDescription insertNewObjectForEntityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext ];
-                
-                NSLog(@"Creating: %@", uniqueId);
-            }else{
-                
-                NSLog(@"Just updating: %@", uniqueId);
-            }
-            
-            NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-            [f setNumberStyle:NSNumberFormatterDecimalStyle];
-            
-            class.subject = [f numberFromString:[eachClassRaw valueForKey:@"subject"]];
-            class.number = [f numberFromString:[eachClassRaw valueForKey:@"number"]];
-            class.available = [eachClassRaw valueForKey:@"available"];
-            class.name = [eachClassRaw valueForKey:@"name"];
-            class.credits = [eachClassRaw valueForKey:@"credits"];
-            class.desc = [eachClassRaw valueForKey:@"description"];
-            class.tags = [eachClassRaw valueForKey:@"tags"];
-            class.prerequisites = [eachClassRaw valueForKey:@"prerequisites"];
-            class.alternatives = [eachClassRaw valueForKey:@"alternatives"];
-            class.uniqueId = [self getUniqueIdFromClassPlist:eachClassRaw];
-
-            
-            
-        }
-        
-        [self.managedObjectContext save:&error];
-        
-    }
     
 }
 
@@ -301,6 +216,138 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+
+- (NSManagedObjectContext *)managedObjectContextForUbiquityChangesInManager:(UbiquityStoreManager *)manager {
+    
+    return self.managedObjectContext;
+}
+
+- (void)ubiquityStoreManager:(UbiquityStoreManager *)manager willLoadStoreIsCloud:(BOOL)isCloudStore {
+    
+    NSLog( @"Triggered willLoadStoreIsCloud");
+    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    
+    _managedObjectContext = nil;
+}
+
+- (void)ubiquityStoreManager:(UbiquityStoreManager *)manager failedLoadingStoreWithCause:(UbiquityStoreErrorCause)cause context:(id)context wasCloud:(BOOL)wasCloudStore
+{
+    NSLog( @"Triggered failedLoadingStoreWithCause");
+}
+- (void)ubiquityStoreManager:(UbiquityStoreManager *)manager didLoadStoreForCoordinator:(NSPersistentStoreCoordinator *)coordinator isCloud:(BOOL)isCloudStore
+{
+    NSLog( @"Triggered didLoadStoreForCoordinator");
+    
+    NSManagedObjectContext *moc = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+    moc.persistentStoreCoordinator = coordinator;
+    moc.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy;
+    _managedObjectContext = moc;
+    
+    [self syncRemoteClasses];
+    
+}
+
+-(void)syncRemoteClasses
+{
+    
+    NSURL *url = [NSURL URLWithString:@"http://raw.github.com/AddoSolutions/University-of-Akron-iCounselor/master/remote-plist.plist"];
+    
+    NSLog(@"Using SQLLite DB: %@", self.managedObjectContext.persistentStoreCoordinator.description);
+    
+    NSDictionary *allData = [[NSDictionary alloc] initWithContentsOfURL:url];
+    
+    NSDictionary *classData = [allData valueForKey:@"courses"];
+    
+    NSLog(@"classData contains %i dictionaries.", [classData count]);
+    
+    
+    if ([classData count] > 0){
+        
+        /* Delete all objects before re-adding them */
+        
+        NSFetchRequest * allClassesQuery = [[NSFetchRequest alloc] init];
+        [allClassesQuery setEntity:[NSEntityDescription entityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext]];
+        [allClassesQuery setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+        
+        NSError * error = nil;
+        NSArray * allClasses = [self.managedObjectContext executeFetchRequest:allClassesQuery error:&error];
+        //error handling goes here
+        for (UAClass * class in allClasses) {
+            
+            /*
+             
+             Check if the class is NOT in the pList and has NOT been taken
+             
+             found = false;
+             
+             for (plist data){
+             if matches, found=true
+             }
+             
+             if (!found) deleteObject;
+             
+             */
+            
+            bool found = false;
+            
+            for (NSDictionary *eachClassRaw in classData) {
+                if( [[self getUniqueIdFromClassPlist:eachClassRaw] isEqualToString:class.uniqueId] ){
+                    found = true;
+                    NSLog(@"Already found: %@", class.uniqueId);
+                    break;
+                }
+            }
+            
+            if (!found){
+                [self.managedObjectContext deleteObject:class];
+                NSLog(@"Deleting: %@", class.uniqueId);
+            }
+        }
+        
+        /* Re add the new ones */
+        
+        for (NSDictionary *eachClassRaw in classData) {
+            
+            
+            // Check id class exists in DB, if so, load it and edit it, otherwise make one.
+            
+            NSString *uniqueId = [self getUniqueIdFromClassPlist:eachClassRaw];
+            
+            UAClass *class = [self getClassFromUniqueId:uniqueId];
+            
+            if (class == nil){
+                class = [NSEntityDescription insertNewObjectForEntityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext ];
+                
+                NSLog(@"Creating: %@", uniqueId);
+            }else{
+                
+                NSLog(@"Just updating: %@", uniqueId);
+            }
+            
+            NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+            [f setNumberStyle:NSNumberFormatterDecimalStyle];
+            
+            class.subject = [f numberFromString:[eachClassRaw valueForKey:@"subject"]];
+            class.number = [f numberFromString:[eachClassRaw valueForKey:@"number"]];
+            class.available = [eachClassRaw valueForKey:@"available"];
+            class.name = [eachClassRaw valueForKey:@"name"];
+            class.credits = [eachClassRaw valueForKey:@"credits"];
+            class.desc = [eachClassRaw valueForKey:@"description"];
+            class.tags = [eachClassRaw valueForKey:@"tags"];
+            class.prerequisites = [eachClassRaw valueForKey:@"prerequisites"];
+            class.alternatives = [eachClassRaw valueForKey:@"alternatives"];
+            class.uniqueId = [self getUniqueIdFromClassPlist:eachClassRaw];
+            
+            
+            
+        }
+        
+        [self.managedObjectContext save:&error];
+        
+    }
+
 }
 
 @end

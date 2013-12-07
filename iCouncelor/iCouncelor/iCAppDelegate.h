@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UbiquityStoreManager.h"
 
-@interface iCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface iCAppDelegate : UIResponder <UIApplicationDelegate, UbiquityStoreManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

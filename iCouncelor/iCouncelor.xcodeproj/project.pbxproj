@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		721C7F35184D1BE000FC4B7D /* graph_bar_trend.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C7F33184D1BE000FC4B7D /* graph_bar_trend.png */; };
 		721C7F36184D1BE000FC4B7D /* magnifying_glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C7F34184D1BE000FC4B7D /* magnifying_glass.png */; };
-		B97A57E3185260E4002CFCB2 /* NSError+UbiquityStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B97A57E0185260E4002CFCB2 /* NSError+UbiquityStoreManager.m */; };
-		B97A57E4185260E4002CFCB2 /* UbiquityStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B97A57E2185260E4002CFCB2 /* UbiquityStoreManager.m */; };
+		B9CC5F801852DB790044BDB2 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC5F7F1852DB790044BDB2 /* JRSwizzle.m */; };
+		B9CC5F851852DB8E0044BDB2 /* NSError+UbiquityStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC5F821852DB8E0044BDB2 /* NSError+UbiquityStoreManager.m */; };
+		B9CC5F861852DB8E0044BDB2 /* UbiquityStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC5F841852DB8E0044BDB2 /* UbiquityStoreManager.m */; };
 		B9CC68471843EDAA00D125EF /* UAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC68461843EDAA00D125EF /* UAClass.m */; };
 		B9D08DC8183FFEC5009142EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC7183FFEC5009142EB /* Foundation.framework */; };
 		B9D08DCA183FFEC5009142EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D08DC9183FFEC5009142EB /* CoreGraphics.framework */; };
@@ -51,10 +52,12 @@
 /* Begin PBXFileReference section */
 		721C7F33184D1BE000FC4B7D /* graph_bar_trend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph_bar_trend.png; sourceTree = "<group>"; };
 		721C7F34184D1BE000FC4B7D /* magnifying_glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnifying_glass.png; sourceTree = "<group>"; };
-		B97A57DF185260E4002CFCB2 /* NSError+UbiquityStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+UbiquityStoreManager.h"; path = "iCouncelor/NSError+UbiquityStoreManager.h"; sourceTree = "<group>"; };
-		B97A57E0185260E4002CFCB2 /* NSError+UbiquityStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+UbiquityStoreManager.m"; path = "iCouncelor/NSError+UbiquityStoreManager.m"; sourceTree = "<group>"; };
-		B97A57E1185260E4002CFCB2 /* UbiquityStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UbiquityStoreManager.h; path = iCouncelor/UbiquityStoreManager.h; sourceTree = "<group>"; };
-		B97A57E2185260E4002CFCB2 /* UbiquityStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UbiquityStoreManager.m; path = iCouncelor/UbiquityStoreManager.m; sourceTree = "<group>"; };
+		B9CC5F7E1852DB790044BDB2 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		B9CC5F7F1852DB790044BDB2 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		B9CC5F811852DB8E0044BDB2 /* NSError+UbiquityStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+UbiquityStoreManager.h"; sourceTree = "<group>"; };
+		B9CC5F821852DB8E0044BDB2 /* NSError+UbiquityStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+UbiquityStoreManager.m"; sourceTree = "<group>"; };
+		B9CC5F831852DB8E0044BDB2 /* UbiquityStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UbiquityStoreManager.h; sourceTree = "<group>"; };
+		B9CC5F841852DB8E0044BDB2 /* UbiquityStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UbiquityStoreManager.m; sourceTree = "<group>"; };
 		B9CC68451843EDAA00D125EF /* UAClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAClass.h; sourceTree = "<group>"; };
 		B9CC68461843EDAA00D125EF /* UAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAClass.m; sourceTree = "<group>"; };
 		B9D08DC4183FFEC5009142EB /* iCouncelor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCouncelor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,10 +126,12 @@
 		B97A57E5185260EE002CFCB2 /* UbiquityStoreManager */ = {
 			isa = PBXGroup;
 			children = (
-				B97A57DF185260E4002CFCB2 /* NSError+UbiquityStoreManager.h */,
-				B97A57E0185260E4002CFCB2 /* NSError+UbiquityStoreManager.m */,
-				B97A57E1185260E4002CFCB2 /* UbiquityStoreManager.h */,
-				B97A57E2185260E4002CFCB2 /* UbiquityStoreManager.m */,
+				B9CC5F7E1852DB790044BDB2 /* JRSwizzle.h */,
+				B9CC5F7F1852DB790044BDB2 /* JRSwizzle.m */,
+				B9CC5F811852DB8E0044BDB2 /* NSError+UbiquityStoreManager.h */,
+				B9CC5F821852DB8E0044BDB2 /* NSError+UbiquityStoreManager.m */,
+				B9CC5F831852DB8E0044BDB2 /* UbiquityStoreManager.h */,
+				B9CC5F841852DB8E0044BDB2 /* UbiquityStoreManager.m */,
 			);
 			name = UbiquityStoreManager;
 			sourceTree = "<group>";
@@ -282,6 +287,9 @@
 							com.apple.InterAppAudio = {
 								enabled = 0;
 							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -340,19 +348,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CC5F801852DB790044BDB2 /* JRSwizzle.m in Sources */,
 				B9D08E541840074A009142EB /* iCRootTabBarController.m in Sources */,
 				B9D08DE3183FFEC5009142EB /* iCouncelor.xcdatamodeld in Sources */,
 				B9D08E5B18400D44009142EB /* iCNavigationController.m in Sources */,
-				B97A57E4185260E4002CFCB2 /* UbiquityStoreManager.m in Sources */,
 				B9D08DDA183FFEC5009142EB /* iCAppDelegate.m in Sources */,
+				B9CC5F861852DB8E0044BDB2 /* UbiquityStoreManager.m in Sources */,
 				B9D08E0A183FFEFB009142EB /* iCOverviewViewController.m in Sources */,
 				B9D08DE6183FFEC5009142EB /* iCMasterViewController.m in Sources */,
 				B9D08E581840096D009142EB /* iCBaseClass.m in Sources */,
-				B97A57E3185260E4002CFCB2 /* NSError+UbiquityStoreManager.m in Sources */,
 				B9D08DD6183FFEC5009142EB /* main.m in Sources */,
 				B9CC68471843EDAA00D125EF /* UAClass.m in Sources */,
 				B9D08DE9183FFEC5009142EB /* iCDetailViewController.m in Sources */,
 				D372E69C184D343900A78A47 /* iCSplitViewController.m in Sources */,
+				B9CC5F851852DB8E0044BDB2 /* NSError+UbiquityStoreManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
