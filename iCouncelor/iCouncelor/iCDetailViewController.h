@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *classNumber;
 @property (weak, nonatomic) IBOutlet UILabel *classCredits;
 @property (weak, nonatomic) IBOutlet UILabel *classDescription;
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
