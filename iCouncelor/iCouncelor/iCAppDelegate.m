@@ -46,7 +46,12 @@
         }
     }
     
-    
+    // STEP 1 - Initialize the UbiquityStoreManager
+    /*
+    _ubiquityStoreManager = [[UbiquityStoreManager alloc] initStoreNamed:nil withManagedObjectModel:nil
+                                                           localStoreURL:nil containerIdentifier:nil additionalStoreOptions:nil
+                                                                delegate:self];
+    */
     
     return YES;
     
@@ -114,40 +119,41 @@
              
              */
             
-            [self.managedObjectContext deleteObject:class];
+            bool found = false;
+            
+            for (NSDictionary *eachClassRaw in classData) {
+                if( [[self getUniqueIdFromClassPlist:eachClassRaw] isEqualToString:class.uniqueId] ){
+                    found = true;
+                    NSLog(@"Already found: %@", class.uniqueId);
+                    break;
+                }
+            }
+            
+            if (!found){
+                [self.managedObjectContext deleteObject:class];
+                NSLog(@"Deleting: %@", class.uniqueId);
+            }
         }
         
         /* Re add the new ones */
         
         for (NSDictionary *eachClassRaw in classData) {
             
-            
-            /*
              
-             Check id class exists in DB, if so, load it and edit it, otherwise make one.
-             
-             
-             
-             */
+            // Check id class exists in DB, if so, load it and edit it, otherwise make one.
             
-            UAClass *class =[NSEntityDescription insertNewObjectForEntityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext ];
+            NSString *uniqueId = [self getUniqueIdFromClassPlist:eachClassRaw];
             
+            UAClass *class = [self getClassFromUniqueId:uniqueId];
             
-            
-            //... repeat for all attributes
-            //[plantMO setValue:gardenManObj forKey:@"gardent"];
-            
-            /*
-             subject
-             number
-             available
-             name
-             credits
-             description
-             tags
-             prerequisites
-             alternatives
-             */
+            if (class == nil){
+                class = [NSEntityDescription insertNewObjectForEntityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext ];
+                
+                NSLog(@"Creating: %@", uniqueId);
+            }else{
+                
+                NSLog(@"Just updating: %@", uniqueId);
+            }
             
             NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
             [f setNumberStyle:NSNumberFormatterDecimalStyle];
@@ -161,13 +167,37 @@
             class.tags = [eachClassRaw valueForKey:@"tags"];
             class.prerequisites = [eachClassRaw valueForKey:@"prerequisites"];
             class.alternatives = [eachClassRaw valueForKey:@"alternatives"];
-            
-            NSLog(@"Got %@ as a name.", class.name);
+            class.uniqueId = [self getUniqueIdFromClassPlist:eachClassRaw];
+
             
             
         }
         
+        [self.managedObjectContext save:&error];
+        
     }
+    
+}
+
+- (UAClass *)getClassFromUniqueId:(NSString *)uniqueId
+{
+    
+    NSFetchRequest * allCars = [[NSFetchRequest alloc] init];
+    [allCars setEntity:[NSEntityDescription entityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext]];
+    [allCars setPredicate:[NSPredicate predicateWithFormat:@"uniqueId == %@", uniqueId]];
+    [allCars setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+    
+    NSError * error = nil;
+    UAClass *class = [[self.managedObjectContext executeFetchRequest:allCars error:&error] firstObject];
+    
+    return class;
+    
+}
+
+- (NSString *)getUniqueIdFromClassPlist:(NSDictionary *)plistClass
+{
+    
+    return [NSString stringWithFormat:@"%@:%@",[plistClass valueForKey:@"subject"],[plistClass valueForKey:@"number"]];
     
 }
 

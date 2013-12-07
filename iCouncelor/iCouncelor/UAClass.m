@@ -19,7 +19,10 @@
 @dynamic credits;
 @dynamic desc;
 @dynamic tags;
+@dynamic uniqueId;
 @dynamic prerequisites;
 @dynamic alternatives;
+@dynamic isInCart;
+@dynamic isTaken;
 
 @end
