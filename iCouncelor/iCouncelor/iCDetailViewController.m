@@ -89,8 +89,7 @@
     self.masterPopoverController = nil;
 }
 - (IBAction)toggleClassTaken:(id)sender {
-    if (self.detailItem.isTaken) self.detailItem.isTaken = [NSNumber numberWithBool:NO];
-    else self.detailItem.isTaken = [NSNumber numberWithBool:YES];
+    self.detailItem.isTaken = [NSNumber numberWithBool:self.takenSwitch.on];
     
     NSLog(@"Setting isTaken to: %@", self.detailItem.isTaken);
     

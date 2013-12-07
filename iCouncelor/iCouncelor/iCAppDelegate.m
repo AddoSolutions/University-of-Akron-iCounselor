@@ -96,12 +96,12 @@
     
         /* Delete all objects before re-adding them */
         
-        NSFetchRequest * allCars = [[NSFetchRequest alloc] init];
-        [allCars setEntity:[NSEntityDescription entityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext]];
-        [allCars setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+        NSFetchRequest * allClassesQuery = [[NSFetchRequest alloc] init];
+        [allClassesQuery setEntity:[NSEntityDescription entityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext]];
+        [allClassesQuery setIncludesPropertyValues:NO]; //only fetch the managedObjectID
         
         NSError * error = nil;
-        NSArray * allClasses = [self.managedObjectContext executeFetchRequest:allCars error:&error];
+        NSArray * allClasses = [self.managedObjectContext executeFetchRequest:allClassesQuery error:&error];
         //error handling goes here
         for (UAClass * class in allClasses) {
             
@@ -182,13 +182,13 @@
 - (UAClass *)getClassFromUniqueId:(NSString *)uniqueId
 {
     
-    NSFetchRequest * allCars = [[NSFetchRequest alloc] init];
-    [allCars setEntity:[NSEntityDescription entityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext]];
-    [allCars setPredicate:[NSPredicate predicateWithFormat:@"uniqueId == %@", uniqueId]];
-    [allCars setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+    NSFetchRequest * classQuery = [[NSFetchRequest alloc] init];
+    [classQuery setEntity:[NSEntityDescription entityForName:@"UAClass" inManagedObjectContext:self.managedObjectContext]];
+    [classQuery setPredicate:[NSPredicate predicateWithFormat:@"uniqueId == %@", uniqueId]];
+    [classQuery setIncludesPropertyValues:NO]; //only fetch the managedObjectID
     
     NSError * error = nil;
-    UAClass *class = [[self.managedObjectContext executeFetchRequest:allCars error:&error] firstObject];
+    UAClass *class = [[self.managedObjectContext executeFetchRequest:classQuery error:&error] firstObject];
     
     return class;
     
