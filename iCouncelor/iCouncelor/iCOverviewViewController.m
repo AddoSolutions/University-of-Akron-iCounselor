@@ -40,6 +40,7 @@
     int classesTaken = 0;
     int creditsAvailable = 0;
     int classesAvailable = 0;
+    int semestersLeft = 0;
     
     for (UAClass * class in allClasses) {
         
@@ -54,13 +55,15 @@
         
     }
     
+    // Get the ceiling of number credits remaining / redits per semester.
+    semestersLeft = ((creditsNeeded - creditsTaken) + creditsPerSemester - 1) / creditsPerSemester;
+    
     self.creditsNeededReport.text = [NSString stringWithFormat:@"%d",creditsNeeded];
     self.creditsTakenReport.text = [NSString stringWithFormat:@"%d",creditsTaken];
-    self.expectedGraduationReport.text = @"Write Logic For This";
+    self.expectedGraduationReport.text = [NSString stringWithFormat:@"%d semesters remain.",semestersLeft];
     
     float progress = [[NSNumber numberWithInt:creditsTaken] floatValue] / [[NSNumber numberWithInt:creditsNeeded] floatValue];
     
-//    progress = .5;
     self.progressReportBar.progress = progress;
     
 	// Do any additional setup after loading the view, typically from a nib.
