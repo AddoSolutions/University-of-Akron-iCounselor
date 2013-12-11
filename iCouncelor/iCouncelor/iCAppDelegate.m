@@ -23,12 +23,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    self.appIsReady = false;
     
     
     NSLog( @"Starting UbiquityStoreManagerExample on device: %@\n\n", [UIDevice currentDevice].name );
     
     // STEP 1 - Initialize the UbiquityStoreManager
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"iCouncelor.sqlite"];
+    //NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"iCouncelor.sqlite"];
+    NSURL *storeURL = nil;
     _ubiquityStoreManager = [[UbiquityStoreManager alloc] initStoreNamed:nil withManagedObjectModel:nil
                                                            localStoreURL:storeURL containerIdentifier:nil additionalStoreOptions:nil
                                                                 delegate:self];
@@ -60,7 +62,8 @@
         }
     }
     
-    [self.ubiquityStoreManager rebuildCloudContentFromCloudStoreOrLocalStore:YES];
+    // [self.ubiquityStoreManager rebuildCloudContentFromCloudStoreOrLocalStore:YES];
+    [self syncRemoteClasses];
     
     return YES;
     
@@ -343,6 +346,8 @@
             
             
         }
+        
+        self.appIsReady = true;
         
         [self.managedObjectContext save:&error];
         
