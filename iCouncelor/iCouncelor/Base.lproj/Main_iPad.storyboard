@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A3017" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="bzZ-ky-63q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="bzZ-ky-63q">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -56,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-lS-HwT">
-                                <rect key="frame" x="20" y="238" width="93" height="21"/>
+                                <rect key="frame" x="20" y="248" width="93" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -86,9 +86,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="classDescription:" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="663" translatesAutoresizingMaskIntoConstraints="NO" id="97T-XU-iWt">
-                                <rect key="frame" x="20" y="272" width="663" height="21"/>
+                                <rect key="frame" x="20" y="282" width="663" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-0Y-XNc">
+                                <rect key="frame" x="169" y="209" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This class is taken" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oH2-gt-Ory">
+                                <rect key="frame" x="20" y="214" width="141" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -106,6 +117,7 @@
                         <outlet property="className" destination="t2E-m1-wmB" id="6dJ-QD-aLI"/>
                         <outlet property="classNumber" destination="ZNk-lA-z6S" id="t0G-ez-7w6"/>
                         <outlet property="classSubject" destination="0ta-xs-hUf" id="dm9-xQ-hck"/>
+                        <outlet property="takenSwitch" destination="PCV-0Y-XNc" id="ShZ-hZ-3sb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
@@ -303,6 +315,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Progress" image="graph_bar_trend.png" id="aVv-Mb-fu7"/>
+                    <connections>
+                        <outlet property="creditsNeededReport" destination="NZL-BB-J0w" id="sTT-uJ-x0n"/>
+                        <outlet property="creditsTakenReport" destination="R9E-He-zBh" id="2kr-9a-PSu"/>
+                        <outlet property="expectedGraduationReport" destination="Tet-6r-FRg" id="R90-o5-F1T"/>
+                        <outlet property="progressReportBar" destination="thC-Zb-EBG" id="hee-Xj-hGs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zhi-Bo-RIx" sceneMemberID="firstResponder"/>
             </objects>

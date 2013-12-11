@@ -60,6 +60,7 @@
     
     float progress = [[NSNumber numberWithInt:creditsTaken] floatValue] / [[NSNumber numberWithInt:creditsNeeded] floatValue];
     
+//    progress = .5;
     self.progressReportBar.progress = progress;
     
 	// Do any additional setup after loading the view, typically from a nib.
