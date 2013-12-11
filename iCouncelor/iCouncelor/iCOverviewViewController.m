@@ -60,7 +60,7 @@
     
     self.creditsNeededReport.text = [NSString stringWithFormat:@"%d",creditsNeeded];
     self.creditsTakenReport.text = [NSString stringWithFormat:@"%d",creditsTaken];
-    self.expectedGraduationReport.text = [NSString stringWithFormat:@"%d semesters remain.",semestersLeft];
+    self.expectedGraduationReport.text = [NSString stringWithFormat:@"%d Semesters Remain",semestersLeft];
     
     float progress = [[NSNumber numberWithInt:creditsTaken] floatValue] / [[NSNumber numberWithInt:creditsNeeded] floatValue];
     
