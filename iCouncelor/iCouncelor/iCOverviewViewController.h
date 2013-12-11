@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *creditsNeededReport;
 @property (weak, nonatomic) IBOutlet UILabel *expectedGraduationReport;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressReportBar;
+@property (weak, nonatomic) IBOutlet UIButton *applyForGraduation;
 
 @end

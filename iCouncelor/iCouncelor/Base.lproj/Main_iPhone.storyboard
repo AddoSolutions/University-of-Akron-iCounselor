@@ -81,12 +81,16 @@
                                 <state key="normal" title="Apply for Graduation">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="applyForGraduationClicked:" destination="pHE-5j-cOm" eventType="touchUpInside" id="niH-OQ-8s1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Progress" image="graph_bar_trend.png" id="cAh-SJ-YD7"/>
                     <connections>
+                        <outlet property="applyForGraduation" destination="PZ2-0Y-jer" id="jHJ-H6-cEB"/>
                         <outlet property="creditsNeededReport" destination="qW5-MT-1m8" id="HCF-td-IGA"/>
                         <outlet property="creditsTakenReport" destination="E1g-JN-xP2" id="ENZ-iw-hRu"/>
                         <outlet property="expectedGraduationReport" destination="s73-9w-s88" id="HNk-Sk-Inz"/>

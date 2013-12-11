@@ -69,6 +69,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+// Opens safari to the UA website page on applying for graduation
+- (IBAction)applyForGraduationClicked:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.uakron.edu/admissions/graduate/"]];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
